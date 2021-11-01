@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="../css/main.css" rel="stylesheet">
+	<title>Victor Vran - Weapon</title>
+</head>
+<body class="container">
+<h1 class="mt-3">Weapon</h1>
+
+<div id="detail" class="d-none">
+	<div class="row">
+		<div class="col-2" id="img"></div>
+		<div class="col">
+			<div class="row">
+				<label for="rarity" class="col-2 col-form-label"><strong>Rarity</strong></label>
+				<div class="col-10">
+					<input type="text" class="form-control-plaintext" id="rarity" readonly="readonly">
+				</div>
+			</div>
+			<div class="row">
+				<label for="type" class="col-2 col-form-label"><strong>Type</strong></label>
+				<div class="col-10">
+					<a href="#" class="btn btn-outline-secondary" id="type"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<a href="../html/weapons.htm" class="btn btn-outline-secondary">back</a>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../js/custom-tags.js"></script>
+<script src="../js/weapons.js"></script>
+<script>
+$(document).ready(function() {
+
+	var showSameType = function() {
+		window.location.href="../html/weapons.htm#" + $('#type').text();
+	};
+
+	const hash = (window.location.hash||'#').toLowerCase().substring(1);
+	var list = weapons.filter(weapon => weapon.name.toLowerCase().replace(/ /g,'_') === hash);
+	if (list.length === 0) {
+		window.location.href="weapons.htm";
+		return;
+	}
+	
+	const weapon = list[0];
+	const id = weapon.name.toLowerCase().replace(/ /g,'_');
+	var type = (weapon.type||'').toLowerCase().replace(/ /g,'_');
+	const img = '../img/weapon/'+type+'/'+id+'.png';
+	$('h1').html(weapon.name);
+	document.title = 'Victor Vran - Weapon: '+weapon.name;
+
+	$('#rarity').val(weapon.rarity);
+	$('#rarity').addClass(weapon.rarity);
+	$('#type').html(weapon.type);
+	$('#type').prop('href',"../html/weapons.htm#"+weapon.type);
+	$('#img').append('<img src="'+img+'" alt="'+weapon.name+'" />');
+	
+	var s = '';
+	
+	if (!!weapon.notes) {
+		weapon.notes.forEach(text => {
+			s += '<div class="row mt-3"><div class="col">' + text + '</div></div>';
+		});
+	}
+	
+	if (!!weapon.attributes) {
+		s += '<div class="row mt-3">'
+		s += '<div class="col-2"><strong>Effects</strong></div>';
+		s += '<div class="col"><ul>';
+		weapon.attributes.filter(text => !!text).forEach(text => {
+			s += '<li>' + text + '</li>';
+		});
+		s += '</ul></div>';
+		s += '</div>';
+	}
+	
+	$('#detail').append(s);
+	$('#detail').removeClass('d-none');
+	
+	window.customTags();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+const powers = [
+	{name:'Berserk Aura', dlc:0},
+	{name:'Blink', dlc:0},
+	{name:'Boomerang', dlc:0},
+	{name:'Dark Mist', dlc:0},
+	{name:'Diamond', dlc:0},
+	{name:'Meteor', dlc:0},
+	{name:'Pull', dlc:0},
+	{name:'Purging Flame', dlc:0},
+	{name:'Sanguine Aura', dlc:0},
+	{name:'Shockwave', dlc:0},
+	{name:'Sunray', dlc:0},
+	{name:'Time Bubble', dlc:0},
+
+	{name:'Bomber', dlc:2},
+	{name:'Crying Shame', dlc:2},
+	{name:'Death Machine', dlc:2},
+	{name:'Heartbreaker', dlc:2},
+	{name:'Iron Fist', dlc:2},
+	{name:'Lost in the Ozone', dlc:2},
+	{name:'Paralyzer', dlc:2},
+];

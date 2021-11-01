@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="../css/main.css" rel="stylesheet">
+	<title>Victor Vran - Destiny Cards</title>
+</head>
+<body class="container">
+<h1>Destiny Cards</h1>
+
+<section>
+<h2>Weapon-specific Unique Cards</h2>
+<div class="row" id="cards_weapon"></div>
+</section>
+
+<section>
+<h2>Unique Cards</h2>
+<div class="row" id="cards_unique"></div>
+</section>
+
+<section>
+<h2>Non-unique Cards</h2>
+<div class="row" id="cards_normal"></div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../js/cards.js"></script>
+<script>
+$(document).ready(function() {
+
+	function makeCard(card) {
+		var base = card.name.toLowerCase().replace(/ /g,'_');
+		const id = base + '_' + card.rarity.substring(0,1);
+		const img = '../img/dc/' + id + '.png';
+		var s = '<div class="col-4">'
+			+ '<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-100 position-relative">'
+				+ '<div class="col p-4 d-flex flex-column position-static">'
+					+ '<h3 class="mb-0 '+card.rarity+'">'+card.name+'</h3>'
+					+ '<a href="../html/card.htm#'+id+'" class="stretched-link"></a>'
+		;
+		if (card.requires !== undefined) {
+			s += '<p class="text-muted">'+card.requires+'</p>';
+		}
+		s +=  '</div>'
+				+ '<div class="col-auto d-none d-lg-block">'
+					+ '<div role="img" class="logocard" style="background-image: url(\''+img+'\');"></div>'
+				+ '</div>'
+			+ '</div>'
+		+ '</div>';
+		return s;
+	}
+
+	cards.filter(card => card.requires!==undefined).forEach(card => {
+		$('#cards_weapon').append(makeCard(card));
+	});
+	cards.filter(card => card.requires===undefined && card.unique).forEach(card => {
+		$('#cards_unique').append(makeCard(card));
+	});
+	// non-unique cards
+	// list contains all variants of non-unique cards
+	var list = cards.filter(card => card.requires===undefined && !card.unique);
+	list.filter(card =>  
+		// only select the highest rarity
+		// by contract higher rarities have larger index in array
+		list.filter(c=>c.name===card.name).pop() === card
+	).forEach(card => {
+		$('#cards_normal').append(makeCard(card));
+	});
+});
+</script>
+</body>
+</html>
