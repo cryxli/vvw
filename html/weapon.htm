@@ -38,11 +38,7 @@
 <script>
 $(document).ready(function() {
 
-	var showSameType = function() {
-		window.location.href="../html/weapons.htm#" + $('#type').text();
-	};
-
-	const hash = (window.location.hash||'#').toLowerCase().substring(1);
+	const hash = decodeURI(window.location.search||'?').toLowerCase().substring(1);
 	var list = weapons.filter(weapon => weapon.name.toLowerCase().replace(/ /g,'_') === hash);
 	if (list.length === 0) {
 		window.location.href="weapons.htm";
@@ -59,7 +55,7 @@ $(document).ready(function() {
 	$('#rarity').val(weapon.rarity);
 	$('#rarity').addClass(weapon.rarity);
 	$('#type').html(weapon.type);
-	$('#type').prop('href',"../html/weapons.htm#"+weapon.type);
+	$('#type').prop('href',"../html/weapons.htm?"+type);
 	$('#img').append('<img src="'+img+'" alt="'+weapon.name+'" />');
 	
 	var s = '';

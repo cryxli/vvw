@@ -30,16 +30,16 @@
 	<div class="col-11">
 		<div class="btn-toolbar" role="toolbar" aria-label="Filter">
 			<div class="btn-group" role="group" aria-label="Item types">
-				<button type="button" class="btn btn-outline-secondary">Lightning Gun</button>
-				<button type="button" class="btn btn-outline-secondary">Hammer</button>
-				<button type="button" class="btn btn-outline-secondary">Sword</button>
-				<button type="button" class="btn btn-outline-secondary">Shotgun</button>
-				<button type="button" class="btn btn-outline-secondary">Rapier</button>
-				<button type="button" class="btn btn-outline-secondary">Scythe</button>
-				<button type="button" class="btn btn-outline-secondary">Hand Mortar</button>
-				<button type="button" class="btn btn-outline-secondary">Tome</button>
-				<button type="button" class="btn btn-outline-secondary">Guitar</button>
-				<button type="button" class="btn btn-outline-secondary">Potion</button>
+				<a href="../html/weapons.htm?lightning_gun" type="button" class="btn btn-outline-secondary">Lightning Gun</a>
+				<a href="../html/weapons.htm?hammer" type="button" class="btn btn-outline-secondary">Hammer</a>
+				<a href="../html/weapons.htm?sword" type="button" class="btn btn-outline-secondary">Sword</a>
+				<a href="../html/weapons.htm?shotgun" type="button" class="btn btn-outline-secondary">Shotgun</a>
+				<a href="../html/weapons.htm?rapier" type="button" class="btn btn-outline-secondary">Rapier</a>
+				<a href="../html/weapons.htm?scythe" type="button" class="btn btn-outline-secondary">Scythe</a>
+				<a href="../html/weapons.htm?hand_mortar" type="button" class="btn btn-outline-secondary">Hand Mortar</a>
+				<a href="../html/weapons.htm?tome" type="button" class="btn btn-outline-secondary">Tome</a>
+				<a href="../html/weapons.htm?guitar" type="button" class="btn btn-outline-secondary">Guitar</a>
+				<a href="../html/weapons.htm?potion" type="button" class="btn btn-outline-secondary">Potion</a>
 			</div>
 		</div>
 	</div>
@@ -59,7 +59,7 @@ $(document).ready(function() {
 			+ '<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-100 position-relative">'
 				+ '<div class="col p-4 d-flex flex-column position-static">'
 					+ '<h3 class="mb-0 '+weapon.rarity+'">'+weapon.name+'</h3>'
-					+ '<a href="../html/weapon.htm#'+id+'" class="stretched-link"></a>'
+					+ '<a href="../html/weapon.htm?'+id+'" class="stretched-link"></a>'
 				+ '</div>'
 				+ '<div class="col-auto d-none d-lg-block">'
 					+ '<div role="img" class="logopower" style="background-image: url(\''+img+'\');"></div>'
@@ -77,15 +77,20 @@ $(document).ready(function() {
 	}
 
 	var updateFilter = function() {
-		$('div[role="group"] button').removeClass('btn-secondary').addClass('btn-outline-secondary');
-		$(this).removeClass('btn-outline-secondary').addClass('btn-secondary');
 		const type = $(this).html();
-		filterItems(type);
-		window.location.href=window.location.protocol+'//'+window.location.host+window.location.pathname+"#"+type;
+		window.location.href=window.location.protocol+'//'+window.location.host+window.location.pathname+"?"+type.toLowerCase().replace(/ /g,'_');
 	}
 	$('div[role="group"] button').click(updateFilter);
 
-	filterItems((window.location.hash||'#').substring(1));
+	function readHash() {
+		var search = decodeURI(window.location.search||'?').substring(1).replace(/_/g,' ');
+		if (!!search) {
+			search = search.split(/ /).map(s => s[0].toUpperCase() + s.substring(1)).join(' ');
+			$("a:contains('"+search+"')").removeClass('btn-outline-secondary').addClass('btn-secondary');
+			filterItems(search);
+		}
+	}
+	readHash();
 });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
