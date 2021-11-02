@@ -32,13 +32,13 @@ $(document).ready(function() {
 
 	function makeCard(card) {
 		var base = card.name.toLowerCase().replace(/ /g,'_');
-		const id = base + '_' + card.rarity.substring(0,1);
+		const id = base + '_' + card.rarity[0];
 		const img = '../img/dc/' + id + '.png';
 		var s = '<div class="col-4">'
 			+ '<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-100 position-relative">'
 				+ '<div class="col p-4 d-flex flex-column position-static">'
 					+ '<h3 class="mb-0 '+card.rarity+'">'+card.name+'</h3>'
-//					+ '<a href="../html/card.htm?'+id+'" class="stretched-link"></a>'
+					+ '<a href="../html/card.htm?'+id+'" class="stretched-link"></a>'
 		;
 		if (card.requires !== undefined) {
 			s += '<p class="text-muted">'+card.requires+'</p>';
@@ -52,10 +52,17 @@ $(document).ready(function() {
 		return s;
 	}
 
+	// unique cards with requirement
 	cards.filter(card => card.requires!==undefined).forEach(card => {
 		$('#cards_weapon').append(makeCard(card));
 	});
-	cards.filter(card => card.requires===undefined && card.unique).forEach(card => {
+	// unique card without requirement
+	var list = cards.filter(card => card.requires===undefined && card.unique);
+	list.filter(card => 
+		// only select the highest rarity
+		// by contract higher rarities have larger index in array
+		list.filter(c=>c.name===card.name).pop() === card
+	).forEach(card => {
 		$('#cards_unique').append(makeCard(card));
 	});
 	// non-unique cards

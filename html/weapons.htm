@@ -88,6 +88,8 @@ $(document).ready(function() {
 			search = search.split(/ /).map(s => s[0].toUpperCase() + s.substring(1)).join(' ');
 			$("a:contains('"+search+"')").removeClass('btn-outline-secondary').addClass('btn-secondary');
 			filterItems(search);
+		} else {
+			filterItems('');
 		}
 	}
 	readHash();
