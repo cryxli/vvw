@@ -28,18 +28,30 @@
 <div class="row mb-3">
 	<label class="col col-form-label">Filter</label>
 	<div class="col-11">
-		<div class="btn-toolbar" role="toolbar" aria-label="Filter">
-			<div class="btn-group" role="group" aria-label="Item types">
-				<a href="../html/weapons.htm?lightning_gun" type="button" class="btn btn-outline-secondary">Lightning Gun</a>
-				<a href="../html/weapons.htm?hammer" type="button" class="btn btn-outline-secondary">Hammer</a>
-				<a href="../html/weapons.htm?sword" type="button" class="btn btn-outline-secondary">Sword</a>
-				<a href="../html/weapons.htm?shotgun" type="button" class="btn btn-outline-secondary">Shotgun</a>
-				<a href="../html/weapons.htm?rapier" type="button" class="btn btn-outline-secondary">Rapier</a>
-				<a href="../html/weapons.htm?scythe" type="button" class="btn btn-outline-secondary">Scythe</a>
-				<a href="../html/weapons.htm?hand_mortar" type="button" class="btn btn-outline-secondary">Hand Mortar</a>
-				<a href="../html/weapons.htm?tome" type="button" class="btn btn-outline-secondary">Tome</a>
-				<a href="../html/weapons.htm?guitar" type="button" class="btn btn-outline-secondary">Guitar</a>
-				<a href="../html/weapons.htm?potion" type="button" class="btn btn-outline-secondary">Potion</a>
+		<div class="row btn-toolbar" role="toolbar" aria-label="Filter">
+			<div class="row">
+				<div class="btn-group" role="group" aria-label="Melee weapons">
+					<a href="../html/weapons.htm?rapier" type="button" class="btn btn-outline-secondary">Rapier</a>
+					<a href="../html/weapons.htm?sword" type="button" class="btn btn-outline-secondary">Sword</a>
+					<a href="../html/weapons.htm?hammer" type="button" class="btn btn-outline-secondary">Hammer</a>
+					<a href="../html/weapons.htm?scythe" type="button" class="btn btn-outline-secondary">Scythe</a>
+				</div>
+			</div>
+			<div class="row mt-1">
+				<div class="btn-group" role="group" aria-label="Ranged weapons">
+					<a href="../html/weapons.htm?lightning_gun" type="button" class="btn btn-outline-secondary">Lightning Gun</a>
+					<a href="../html/weapons.htm?shotgun" type="button" class="btn btn-outline-secondary">Shotgun</a>
+					<a href="../html/weapons.htm?hand_mortar" type="button" class="btn btn-outline-secondary">Hand Mortar</a>
+					<a href="../html/weapons.htm?tome" type="button" class="btn btn-outline-secondary">Tome</a>
+					<a href="../html/weapons.htm?guitar" type="button" class="btn btn-outline-secondary">Guitar</a>
+					<a href="../html/weapons.htm?revolver" type="button" class="btn btn-outline-secondary">Revolver</a>
+				</div>
+			</div>
+			<div class="row mt-1">
+				<div class="btn-group" role="group" aria-label="Other items">
+					<a href="../html/weapons.htm?potion" type="button" class="btn btn-outline-secondary">Potion</a>
+					<a href="../html/weapons.htm" type="button" class="btn btn-outline-secondary">Reset filter</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -47,12 +59,13 @@
 <div class="row" id="weapons_legendary"></div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../js/custom-tags.js"></script>
 <script src="../js/weapons.js"></script>
 <script>
 $(document).ready(function() {
 
 	var makeCard = function(weapon) {
-		const id = weapon.name.toLowerCase().replace(/ /g,'_');
+		const id = window.id(weapon.name);
 		var type = (weapon.type||'').toLowerCase().replace(/ /g,'_');
 		const img = '../img/weapon/'+type+'/'+id+'.png';
 		var s = '<div class="col-4">'

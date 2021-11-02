@@ -26,12 +26,13 @@
 </section>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../js/custom-tags.js"></script>
 <script src="../js/cards.js"></script>
 <script>
 $(document).ready(function() {
 
 	function makeCard(card) {
-		var base = card.name.toLowerCase().replace(/ /g,'_');
+		var base = window.id(card.name);
 		const id = base + '_' + card.rarity[0];
 		const img = '../img/dc/' + id + '.png';
 		var s = '<div class="col-4">'

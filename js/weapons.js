@@ -24,7 +24,7 @@ const weapons = [
 	{name:'The Master', rarity:'legendary', type:'Sword', attributes:['Damage increased by 34% when health is above 90%','+90 armor penetration','Reflect projectiles by hitting them with the Hack attack']},
 	{name:'The Sentinel', rarity:'legendary', type:'Sword', attributes:['Critical damage increased by 88%','+90 armor penetration','Reflect projectiles by hitting them with the Hack attack']},
 	// --- shotgun
-	{name:'Exterminator', rarity:'legendary', type:'Shotgun', attributes:['Damage increased by 44% when health is below 50%','+75 armor penetration','The Fire and Aimed Shot attacks pierce targets']},
+	{name:'Ex&shy;ter&shy;mi&shy;na&shy;tor', rarity:'legendary', type:'Shotgun', attributes:['Damage increased by 44% when health is below 50%','+75 armor penetration','The Fire and Aimed Shot attacks pierce targets']},
 	{name:'Party Starter', rarity:'legendary', type:'Shotgun', attributes:['Critical damage increased by 88%','Knocks back enemies with 35% chance','Stack Aether Charges on Split Timing.','At 15 chargers the Fire attack unleashes a spread of fireworks']},
 	{name:'Reanimator', rarity:'legendary', type:'Shotgun', attributes:['Damage increased by 40% when the overdrive meter is full','Overdrive meter fills 110% faster','Aimed Shot causes <effect>Cripple</effect>','Extra 30% damage against crippled enemies']},
 	{name:'The Repeater', rarity:'legendary', type:'Shotgun', attributes:['44% faster weapon skill cooldowns','Gain 80 health on hit','Greatly increased attack speed']},
@@ -50,7 +50,7 @@ const weapons = [
 	// --- tome
 	{name:'Fifty Shades of Slay', rarity:'legendary', type:'Tome', attributes:['Damage increased by 17%','+75 armor penetration','Magic Missiles has longer range and higher damage but they no longer pierce targets']},
 	{name:'Ignis Tenebris', rarity:'legendary', type:'Tome', attributes:['Damage increased by 47% when health is above 90%','Gain 40 health on hit','Dimension Wave leaves a trail of flame that damages foes.']},
-	{name:'Nekonomicon', rarity:'legendary', type:'Tome', attributes:['Critical damage increased by 160%','Critical chance increased by 15%','Stack Aether Charges when picking up power orbs. At 10 charges the Magic Missiles attack calls down neon cats from the heavens']},
+	{name:'Neko&shy;nom&shy;i&shy;con', rarity:'legendary', type:'Tome', attributes:['Critical damage increased by 160%','Critical chance increased by 15%','Stack Aether Charges when picking up power orbs. At 10 charges the Magic Missiles attack calls down neon cats from the heavens']},
 	{name:'The Arcanist Cookbook', rarity:'legendary', type:'Tome', attributes:['Damage increased by 47% when the overdrive meter is full','Overdrive meter fills 75% faster','Trigger an explosion every time you pick up a power orb']},
 	{name:'The King in Yellow', rarity:'legendary', type:'Tome', attributes:['Damage increased by 30%','While equipped: Minimal gold drops','Gain 10.0% of max health on crit (5 sec. cooldown)','A zone of yellow flames appears around the caster while channeling the Magic Missile attack dealing damage to foes in the area']},
 	// --- potion
@@ -59,5 +59,15 @@ const weapons = [
 	{name:'Greater Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 500 health and removes one negative effect','Heals extra 250 health, if an effect is removes']},
 	{name:'Superior Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 750 health and removes one negative effect','Heals extra 250 health, if an effect is removes']},
 	// --- guitar
+	{name:'The Kill&shy;meister', rarity:'legendary', type:'Guitar', attributes:['Damage increased by 32%','Knocks back enemies with X% chance','Power Chord attack pierces targets and has longer range']},
+	{name:'Electric Guitar', rarity:'legendary', type:'Guitar', attributes:['Attack speed increased by 25%','Critical hit chance increased by X%','Power Chord attack may inflict the <effect>Electrocuted</effect> condition on hit','Wicked Solo attack unleashes 4 lightninga balls']},
 	{name:'Solo', rarity:'legendary', type:'Guitar', attributes:['50% faster weapon skill cooldowns','While equipped: Find 20% more items','Wicket Solo attack helas you and grants Lifesteal to nearby allies']},
+	{name:'The Bass', rarity:'legendary', type:'Guitar', attributes:['Critical Damage increased by 130%','Gain 5.0%  of max health on crit (5 sec. cooldown)','Stack Aether charges when you perform a split-time attck','At 10 charges Power Chord unleashes a swarm of Dazing projectiles']},
+	{name:'The Explorer', rarity:'legendary', type:'Guitar', attributes:['Overdrive meter fills 125% faster','+45 armor penetration','Bang Attack inflicts <effect>Headbang</effect>','Power Chord attack may inflict <effect>Headbang</effect>.','+50% damage against Headbanging monsters']},
+	// --- revolver
+	{name:'Rock and Roll', rarity:'legendary', type:'Revolver', attributes:['+75 armor penetration','+45 armor penetration','Piercing bullets']},
+	{name:'Hellraisers', rarity:'legendary', type:'Revolver', attributes:['50% faster weapon skill cooldowns','Critical hits knock back enemies (5 sec. cooldown)','Double shots and special attacks inflict <effect>Burning</effect>']},
+	{name:'The Mikkeys', rarity:'legendary', type:'Revolver', attributes:['Overdrive meter fills 75% faster','Gain 80 health on hit','Double shots cause Headbanging in large area']},
+	{name:'Old Gutrots', rarity:'legendary', type:'Revolver', attributes:['Attack speed increased by 15%','attack speed increased by 15%','Stack aether charges on crit','At 10 charges the barrage attack inflicts additional damage and cripples all foes in the area']},
+	{name:'The Piece&shy;mak&shy;ers', rarity:'legendary', type:'Revolver', attributes:['Critical damage increased by 70%','Inflicts <effect>vulnarable</effect> with 40% chance','exploding bullets']},
 ];

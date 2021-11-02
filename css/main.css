@@ -9,3 +9,5 @@ a.common:hover, a.uncommon:hover, a.rare:hover, a.legendary:hover { text-decorat
 .logocard,.logopower { background-size: cover; background-position: center center; }
 .logopower { width: 80px; height: 126px; }
 .logocard { width: 80px; height: 133px; }
+
+#cards_weapon div.flex-column p, #variations div.flex-column p { margin-bottom: -1em; }

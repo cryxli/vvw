@@ -19,3 +19,6 @@ window.customTags = window.customTags||function() {
 	});
 
 };
+window.id=window.id||function(text) {
+	return decodeURI(text||'').toLowerCase().replace(/&shy;/g,'').replace(/[' ]/g,'_');
+};
