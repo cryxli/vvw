@@ -18,6 +18,23 @@ window.customTags = window.customTags||function() {
 		$(elem).replaceWith('<a href="effect.htm?'+id+'">'+text+'</a>');
 	});
 
+	$('outfit').each((index,elem) => {
+		const text = $(elem).text();
+		const id = text.toLowerCase().replace(/ /g,'_');
+		$(elem).replaceWith('<a href="item.htm?'+id+'" class="legendary">'+text+'</a>');
+	});
+
+	$('power').each((index,elem) => {
+		const text = $(elem).text();
+		// TODO rarity
+		const rarity = 'common';
+		
+		const id = text.toLowerCase().replace(/ /g,'_');
+		$(elem).replaceWith('<a href="power.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
+	});
+	
+	// TODO card
+
 };
 window.id=window.id||function(text) {
 	return decodeURI(text||'').toLowerCase().replace(/&shy;/g,'').replace(/[' ]/g,'_');
@@ -44,6 +61,9 @@ $(document).ready(function() {
 	}
 	if (window.location.href.indexOf('/weapon.htm?') !== -1) {
         s += '<li class="nav-item"><a class="nav-link active" href="'+url+'/html/weapons.htm">Weapons</a></li>';
+	}
+	if (window.location.href.indexOf('/item.htm?') !== -1) {
+        s += '<li class="nav-item"><a class="nav-link active" href="'+url+'/html/items.htm">Other Items</a></li>';
 	}
 	if (window.location.href.indexOf('/stone.htm?') !== -1) {
         s += '<li class="nav-item"><a class="nav-link active" href="'+url+'/html/stones.htm">Power Stones</a></li>';

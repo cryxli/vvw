@@ -53,11 +53,6 @@ const weapons = [
 	{name:'Neko&shy;nom&shy;i&shy;con', rarity:'legendary', type:'Tome', attributes:['Critical damage increased by 160%','Critical chance increased by 15%','Stack Aether Charges when picking up power orbs. At 10 charges the Magic Missiles attack calls down neon cats from the heavens']},
 	{name:'The Arcanist Cookbook', rarity:'legendary', type:'Tome', attributes:['Damage increased by 47% when the overdrive meter is full','Overdrive meter fills 75% faster','Trigger an explosion every time you pick up a power orb']},
 	{name:'The King in Yellow', rarity:'legendary', type:'Tome', attributes:['Damage increased by 30%','While equipped: Minimal gold drops','Gain 10.0% of max health on crit (5 sec. cooldown)','A zone of yellow flames appears around the caster while channeling the Magic Missile attack dealing damage to foes in the area']},
-	// --- potion
-	{name:'Lucky Rab&shy;bit\'s Foot', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Gives Luck for 5 sec.','Luck: Critical chance is increased by 100%']},
-	{name:'Medical Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 300 health and removes one negative effect','Heals extra 150 health, if an effect is removes']},
-	{name:'Greater Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 500 health and removes one negative effect','Heals extra 250 health, if an effect is removes']},
-	{name:'Superior Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 750 health and removes one negative effect','Heals extra 250 health, if an effect is removes']},
 	// --- guitar
 	{name:'The Kill&shy;meister', rarity:'legendary', type:'Guitar', attributes:['Damage increased by 32%','Knocks back enemies with X% chance','Power Chord attack pierces targets and has longer range']},
 	{name:'Electric Guitar', rarity:'legendary', type:'Guitar', attributes:['Attack speed increased by 25%','Critical hit chance increased by X%','Power Chord attack may inflict the <effect>Electrocuted</effect> condition on hit','Wicked Solo attack unleashes 4 lightninga balls']},

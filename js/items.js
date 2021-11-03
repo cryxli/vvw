@@ -1,0 +1,31 @@
+const items = [
+	// --- potion
+	{name:'Lucky Rab&shy;bit\'s Foot', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Gives Luck for 5 sec.','Luck: Critical chance is increased by 100%']},
+	{name:'Medical Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 300 health and removes one negative effect','Heals extra 150 health, if an effect is removes']},
+	{name:'Greater Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 500 health and removes one negative effect','Heals extra 250 health, if an effect is removes']},
+	{name:'Superior Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 750 health and removes one negative effect','Heals extra 250 health, if an effect is removes']},
+	{name:'Adrenaline Shot', rarity:'uncommon', type:'Potion', attributes:['Gives <effect>Speed</effect> for 20 sec.']},
+	{name:'Ambrosia', rarity:'uncommon', type:'Potion', attributes:['Restores 100% health and refreshes the cooldowns of all attacks and Demon Powers']},
+	{name:'Barkskin Potion', rarity:'common', type:'Potion', attributes:['Gain 100 armor and immunity to daze, interrupts and push effects for 20 sec.']},
+	{name:'Fire Bomb', rarity:'uncommon', type:'Potion', attributes:['Inflicts 5000 damage to all enemies within 7m']},
+	{name:'Flash Bomb', rarity:'uncommon', type:'Potion', attributes:['Inflicts 300 damage and <effect>Daze</effect> to all enemies within 7m']},
+	{name:'Frost Bomb', rarity:'uncommon', type:'Potion', attributes:['Inflicts 300 damage and <effect>Frost</effect> for 3 seconds to all enemies within 7m']},
+	{name:'Healing Potion', rarity:'uncommon', type:'Potion', attributes:['Restores 60% health']},
+	{name:'Leech Bomb', rarity:'uncommon', type:'Potion', attributes:['Inflicts 300 damage to all enemies within 7m','Gain 100 health per enemy hit (up to 1000 health)']},
+	{name:'Vampire Blood', rarity:'uncommon', type:'Potion', attributes:['Gain 50% Life Steal for 45 sec']},
+	// --- ingredient
+	{name:'Blue Dye', rarity:'uncommon', type:'Ingredient', attributes:['']},
+	{name:'Green Dye', rarity:'uncommon', type:'Ingredient', attributes:['']},
+	// --- outfits
+	{name:'Hunter\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['']},
+	{name:'Cavalier\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['']},
+	{name:'Vigilante\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['']},
+	{name:'Wanderer\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['']},
+	{name:'Vanguard\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['']},
+	{name:'Zealot\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['']},
+	{name:'Adventurer\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['']},
+	{name:'Highlander\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['']},
+	{name:'Lemmy\'s Outfit', rarity:'legendary', type:'Outfit', attributes:[''], dlc:2},
+	{name:'Phil\'s Outfit', rarity:'legendary', type:'Outfit', attributes:[''], dlc:2},
+	{name:'Mikkey\'s Outfit', rarity:'legendary', type:'Outfit', attributes:[''], dlc:2},
+];
