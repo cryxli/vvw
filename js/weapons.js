@@ -54,7 +54,7 @@ const weapons = [
 	{name:'The Arcanist Cookbook', rarity:'legendary', type:'Tome', attributes:['Damage increased by 47% when the overdrive meter is full','Overdrive meter fills 75% faster','Trigger an explosion every time you pick up a power orb']},
 	{name:'The King in Yellow', rarity:'legendary', type:'Tome', attributes:['Damage increased by 30%','While equipped: Minimal gold drops','Gain 10.0% of max health on crit (5 sec. cooldown)','A zone of yellow flames appears around the caster while channeling the Magic Missile attack dealing damage to foes in the area']},
 	// --- potion
-	{name:'Lucky Rabbit\'s Foot', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Gives Luck for 5 sec.','Luck: Critical chance is increased by 100%']},
+	{name:'Lucky Rab&shy;bit\'s Foot', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Gives Luck for 5 sec.','Luck: Critical chance is increased by 100%']},
 	{name:'Medical Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 300 health and removes one negative effect','Heals extra 150 health, if an effect is removes']},
 	{name:'Greater Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 500 health and removes one negative effect','Heals extra 250 health, if an effect is removes']},
 	{name:'Superior Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 750 health and removes one negative effect','Heals extra 250 health, if an effect is removes']},
