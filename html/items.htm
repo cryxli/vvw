@@ -48,7 +48,7 @@
 $(document).ready(function() {
 
 	var makeCard = function(item) {
-		const id = window.id(item.name);
+		const id = item.id||window.id(item.name);
 		var type = (item.type||'').toLowerCase().replace(/ /g,'_');
 		const img = '../img/item/'+type+'/'+id+'.png';
 		var s = '<div class="col-4">'

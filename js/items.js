@@ -28,4 +28,8 @@ const items = [
 	{name:'Lemmy\'s Outfit', rarity:'legendary', type:'Outfit', attributes:[''], dlc:2},
 	{name:'Phil\'s Outfit', rarity:'legendary', type:'Outfit', attributes:[''], dlc:2},
 	{name:'Mikkey\'s Outfit', rarity:'legendary', type:'Outfit', attributes:[''], dlc:2},
+	//
+	{name:'Gift Box', id:'gift_box_c', rarity:'common', type:'Potion', attributes:['']},
+	{name:'Gift Box', id:'gift_box_u', rarity:'uncommon', type:'Potion', attributes:['']},
+	{name:'Gift Box', id:'gift_box_r', rarity:'rare', type:'Potion', attributes:['']},
 ];

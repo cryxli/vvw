@@ -1,39 +1,67 @@
 window.customTags = window.customTags||function() {
+	var url = '../';
+	if (window.location.href.indexOf('/html/npc/') > -1) {
+		url = '../../';
+	} else if (window.location.href.indexOf('/html/') === -1) {
+		url = '';
+	}
 	
 	$('npc').each((index,elem) => {
 		const text = $(elem).text();
 		const id = text.toLowerCase().replace(/ /g,'_');
-		$(elem).replaceWith('<a href="npc.htm?'+id+'">'+text+'</a>');
+		$(elem).replaceWith('<a href="'+url+'html/npc.htm?'+id+'">'+text+'</a>');
 	});
 	
 	$('location').each((index,elem) => {
 		const text = $(elem).text();
-		const id = text.toLowerCase().replace(/ /g,'_');
-		$(elem).replaceWith('<a href="location.htm?'+id+'">'+text+'</a>');
+		const id = $(elem).attr('id')||text.toLowerCase().replace(/ /g,'_');
+		$(elem).replaceWith('<a href="'+url+'html/location.htm?'+id+'">'+text+'</a>');
 	});
 	
 	$('effect').each((index,elem) => {
 		const text = $(elem).text();
-		const id = text.toLowerCase().replace(/ /g,'_');
-		$(elem).replaceWith('<a href="effect.htm?'+id+'">'+text+'</a>');
+		const id = $(elem).attr('id')||text.toLowerCase().replace(/ /g,'_');
+		$(elem).replaceWith('<a href="'+url+'html/effect.htm?'+id+'">'+text+'</a>');
 	});
 
 	$('outfit').each((index,elem) => {
 		const text = $(elem).text();
 		const id = text.toLowerCase().replace(/ /g,'_');
-		$(elem).replaceWith('<a href="item.htm?'+id+'" class="legendary">'+text+'</a>');
+		$(elem).replaceWith('<a href="'+url+'html/item.htm?'+id+'" class="legendary">'+text+'</a>');
+	});
+
+	$('weapon').each((index,elem) => {
+		const text = $(elem).text();
+		const id = $(elem).attr('id')||text.toLowerCase().replace(/ /g,'_');
+		$(elem).replaceWith('<a href="'+url+'html/weapon.htm?'+id+'" class="legendary">'+text+'</a>');
 	});
 
 	$('power').each((index,elem) => {
 		const text = $(elem).text();
-		// TODO rarity
-		const rarity = 'common';
-		
+		const rarity = $(elem).attr('rarity')||'common';		
 		const id = text.toLowerCase().replace(/ /g,'_');
-		$(elem).replaceWith('<a href="power.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
+		$(elem).replaceWith('<a href="'+url+'html/power.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
 	});
 	
-	// TODO card
+	$('card').each((index,elem) => {
+		const text = $(elem).text();
+		const rarity = $(elem).attr('rarity')||'common';
+		const id = $(elem).attr('id')||text.toLowerCase().replace(/ /g,'_')+'_'+rarity[0];
+		$(elem).replaceWith('<a href="'+url+'html/card.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
+	});
+
+	$('item').each((index,elem) => {
+		const text = $(elem).text();
+		const rarity = $(elem).attr('rarity')||'common';
+		const id = $(elem).attr('id')||text.toLowerCase().replace(/ /g,'_');
+		$(elem).replaceWith('<a href="'+url+'html/item.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
+	});
+
+	$('stone').each((index,elem) => {
+		const text = $(elem).text();
+		const id = $(elem).attr('id')||text.toLowerCase().replace(/ /g,'_');
+		$(elem).replaceWith('<a href="'+url+'html/stone.htm?'+id+'" class="rare">'+text+'</a>');
+	});
 
 };
 window.id=window.id||function(text) {
@@ -42,9 +70,12 @@ window.id=window.id||function(text) {
 
 $(document).ready(function() {
 	var url = '../';
-	if (window.location.href.indexOf('/html/') === -1) {
+	if (window.location.href.indexOf('/html/npc/') > -1) {
+		url = '../../';
+	} else if (window.location.href.indexOf('/html/') === -1) {
 		url = '';
-	}	
+	}
+
 	$('nav').addClass(['navbar','navbar-expand-lg','navbar-dark','bg-dark']);
 	var s = '<div class="container-fluid"><a class="navbar-brand" href="'+url+'index.htm">Victor Vran </a>';
 	
