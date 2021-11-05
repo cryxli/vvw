@@ -1,3 +1,23 @@
+const divine = [
+	{name:'chest', attributes:['<max>27</max>% chance to get an additional drop from chests']},
+	{name:'negative', attributes:['Remove a negative condition on kill (5 seconds cooldown)']},
+	{name:'lightning', attributes:['Lightning strike to ranged attackers (300 damage, <max>22</max>% chance) that inflicts <effect>Weakness</effect>']},
+	{name:'health', attributes:['Gain <max>280</max> health when the overdrive is filled']},
+	{name:'strike', attributes:['<max>56</max>% to negate a critical strike']},
+	{name:'damage', attributes:['+<max>14</max>% damage when health is above 90%']},
+	{name:'armor', attributes:['+<max>27</max> armor penetration']},
+	{name:'regeneration', attributes:['Gain <effect>Regeneration</effect> for 10 seconds when below <max>37</max>% health']},
+];
+const wicked = [
+	{name:'dodge', attributes:['Increased Dodge distance']},
+	{name:'negative', attributes:['-<max>37</ma>% duration of negative conditions']},
+	{name:'cripple', attributes:['Inflict <effect>Cripple</effect> on crit (<max>44</max>% chance)']},
+	{name:'brutality', attributes:['Gain <effect>Brutality</effect> when overdrive is filled (<max>29</max>% chance)']},
+	{name:'overdrive', attributes:['Gain <max>3.90</max>% of max overdrive on overkill']},
+	{name:'focus', attributes:['Gain <effect>Focus</effect> for 10 seconds on overkill (30 seconds cooldown)']},
+	{name:'speed', attributes:['Gain <effect>Speed</effect> for <max>7</max> seconds on kill (20 seconds cooldown)']},
+	{name:'bleed', attributes:['Inflict <effect>Bleeding</effect> on crit (<max>33</max>% chance)']},
+];
 const cards = [
 	{name:'The Muse', rarity:'legendary', points:2, attributes:['Guitar bang attack hits more targets and inflicts the <effect>Electrocuted</effect> condition.'], unique:true, requires:'Guitar'},
 	{name:'The Bard', rarity:'legendary', points:3, attributes:['Power Chord attack spawns 2 additional projectiles (from 3 to 5)','Wicked Solo attack leaves damaging trail.'], unique:true, requires:'Guitar'},
@@ -25,11 +45,11 @@ const cards = [
 	{name:'The Al&shy;chemist', rarity:'uncommon', points:3, attributes:['Lower the cooldown of consumables by 25%'], unique:true},
 	{name:'The Al&shy;chemist', rarity:'rare', points:5, attributes:['Lower the cooldown of consumables by 40%'], unique:true},
 	{name:'The Bar&shy;bar&shy;ian', rarity:'uncommon', points:5, attributes:['Lower attack cooldowns by 1 sec. when you overkill an enemy','Refresh all cooldowns when the overdrive bar is filled'], unique:true},
-	{name:'The Devil', rarity:'legendary', points:4, attributes:['+20 armor penetration per equipped wicked card','Enemies drop orbs on hit that give <effect>Brutality</effect> when picked up','Wicked: this card will always have wicked attribute and a random bonus attribute for being wicked.'], unique:true},
+	{name:'The Devil', rarity:'legendary', points:4, attributes:['+20 armor penetration per equipped wicked card','Enemies drop orbs on hit that give <effect>Brutality</effect> when picked up','(Wicked) This card will always have wicked attribute.'], unique:true},
 	{name:'The Grace', rarity:'legendary', points:2, attributes:['Become immune to attacks while dodging'], unique:true, dlc:2},
 	{name:'The Inventor', rarity:'legendary', points:3, attributes:['Doubles the damage and increases the effects and range of bombs','Leave a Frost Bomb behind when you dodge (60 sec. cooldown)'], unique:true},
 	{name:'The Runner', rarity:'common', points:2, attributes:['+20% movement speed'], unique:true},
-	{name:'The Saint', rarity:'legendary', points:4, attributes:['+15 armor per equipped Divine card','Enemies drop health orbs on hit that restore 200 health when picked up (8 sec. cooldown)','Divine: this card will always have Divine attribute and a random bonus attribute for being Divine.'], unique:true},
+	{name:'The Saint', rarity:'legendary', points:4, attributes:['+15 armor per equipped Divine card','Enemies drop health orbs on hit that restore 200 health when picked up (8 sec. cooldown)','(Divine) This card will always have Divine attribute.'], unique:true},
 	{name:'The Seer', rarity:'legendary', points:0, attributes:['+4 Destiny Points'], unique:true},
 
 	{name:'Death', rarity:'common', points:1, attributes:['+7% damage but lose 3% max health'], unique:false},

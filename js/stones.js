@@ -6,5 +6,11 @@ const stones = [
 	{name:'Skeleton Slayer\'s Power Stone', effect:['Use in Transmutation to add or improve the <effect>Skeleton Slayer\'s</effect> property of an uncommon or rare weapon','Skeleton Slayer\'s: Increases damage against skeletons']},
 	{name:'Power Stone of Fervor', effect:['Use in Transmutation to improve the secondary property of an outfit']},
 	{name:'Power Stone of Smiting', effect:['']},
+	{name:'Dancing Power Stone', effect:['Use in Transmutation to add or improve the <effect>Dancing</effect> property of an uncommon or rare weapon']},
+	{name:'Piercing Power Stone', effect:['Use in Transmutation to add or improve the <effect>Piercing</effect> orioerty of an uncommon or rare weapon']},
+	{name:'Power Stone of the Leech', effect:['Use in Transmutation to add or improve the <effect>of the Leech</effect> property of an uncommon or rare weapon']},
+	{name:'Power Stone of Vampirism', effect:['Use in Transmutation to add or improve <effect>of Vampirism</effect> property of an uncommon or rare weapon']},
+	{name:'Elder Power Stone', effect:['Use in Transmutation to add or improve the <effect>Elder</effect> orioerty of an uncommon or rare weapon']},
+	{name:'Inquisitor\'s Power Stone', effect:['Use in Transmutation to add or imporive the <effect>Inquisitor\'s</effect> property of an uncommon or rare weapon.']},
 	// {name:'', effect:['']},
 ];

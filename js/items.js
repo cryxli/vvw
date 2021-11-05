@@ -14,8 +14,10 @@ const items = [
 	{name:'Leech Bomb', rarity:'uncommon', type:'Potion', attributes:['Inflicts 300 damage to all enemies within 7m','Gain 100 health per enemy hit (up to 1000 health)']},
 	{name:'Vampire Blood', rarity:'uncommon', type:'Potion', attributes:['Gain 50% Life Steal for 45 sec']},
 	// --- ingredient
+	{name:'Black Dye', rarity:'rare', type:'Ingredient', attributes:['']},
 	{name:'Blue Dye', rarity:'uncommon', type:'Ingredient', attributes:['']},
 	{name:'Green Dye', rarity:'uncommon', type:'Ingredient', attributes:['']},
+	{name:'Red Dye', rarity:'uncommon', type:'Ingredient', attributes:['']},
 	// --- outfits
 	{name:'Hunter\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['']},
 	{name:'Cavalier\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['']},
@@ -32,4 +34,5 @@ const items = [
 	{name:'Gift Box', id:'gift_box_c', rarity:'common', type:'Potion', attributes:['']},
 	{name:'Gift Box', id:'gift_box_u', rarity:'uncommon', type:'Potion', attributes:['']},
 	{name:'Gift Box', id:'gift_box_r', rarity:'rare', type:'Potion', attributes:['']},
+	{name:'Pumpkin Pie', rarity:'legendary', type:'Potion', attributes:['Eat Pumpkin Pie to travel to the secret pumpkin area.']},
 ];

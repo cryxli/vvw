@@ -70,33 +70,88 @@ $(document).ready(function() {
 		return s;
 	}
 
-	const hash = decodeURI(window.location.search||'?').toLowerCase().substring(1);
-	var list = cards.filter(card => window.id(card.name)+'_'+card.rarity[0] === hash);
+	function setTitle(cardName) {
+		$('h1').html(cardName);
+		document.title = 'Victor Vran - Destiny Card: '+cardName;
+	}
+
+	function readParam(paramKey, defaultValue) {
+		const key = (paramKey||'id').toLowerCase();
+		var paramList = decodeURI(window.location.search||'?').substring(1);
+		if (paramList.indexOf('id=') === -1) { paramList = 'id='+paramList; }
+		var pos = paramList.toLowerCase().indexOf(key+'=');
+		if (pos === -1) {
+			return defaultValue||null;
+		}
+		pos += key.length+1;
+		var value = paramList.substring(pos);
+		pos = value.indexOf('&');
+		if (pos === -1) {
+			return value||defaultValue||null;
+		} else {
+			return value.substring(0,pos)||defaultValue||null;
+		}
+	}
+
+	function handlePrefix(card, effects, prefixString, prefixName, modAttrs) {
+		const list = modAttrs.filter(eff => eff.name === mod);
+		if (list.length === 1) {
+			const value = readParam('value');
+			list[0].attributes.filter(text => !!text).forEach(text => {
+				if (value !== null) {
+					text = text.replace(/<max>(.+)<\/max>/g,value);
+				}
+				effects.push('('+prefixString+') '+text);
+			});
+		} else {
+			return card.name;
+		}
+
+		if (card.name.indexOf('The') === 0) { 
+			return 'The '+prefixString+card.name.substring(3);
+		} else { 
+			return prefixString+' '+card.name;
+		}
+	}
+
+	const id = readParam('id');
+	var list = cards.filter(card => window.id(card.name)+'_'+card.rarity[0] === id);
 	if (list.length === 0) {
 		window.location.href="cards.htm";
 		return;
 	}
 
 	const card = list[0];
-	const id = card.name.toLowerCase().replace(/ /g,'_')+'_'+card.rarity[0];
 	const img = '../img/dc/'+id+'.png';
-	$('h1').html(card.name);
-	document.title = 'Victor Vran - Destiny Card: '+card.name;
 	$('#rarity').val(card.rarity);
 	$('#rarity').addClass(card.rarity);
 	$('#points').val(card.points);
 	$('#unique').val(card.unique ? 'yes' : 'no');
 	$('#img').append('<img src="'+img+'" alt="'+card.name+'" />');
 
+	const effects = [];
+	if (!!card.requires) {
+		effects.push('Requires '+card.requires);
+	}
+	card.attributes.filter(text => !!text).forEach(text => effects.push(text));
+	
+	var title = card.name;
+	var mod = readParam('divine');
+	if (!!mod) {
+		title = handlePrefix(card, effects, 'Divine', mod, divine);
+	}
+	mod = readParam('wicked');
+	if (!!mod) {
+		title = handlePrefix(card, effects, 'Wicked', mod, wicked);
+	}
+	setTitle(title);
+
 	var s = '';
-	if (!!card.attributes || !!card.requires) {
+	if (effects.length > 0) {
 		s += '<div class="row mt-3">'
 		s += '<div class="col-2"><strong>Effects</strong></div>';
 		s += '<div class="col"><ul>';
-		if (!!card.requires) {
-			s += '<li>Requires '+card.requires+'</li>';
-		}
-		card.attributes.filter(text => !!text).forEach(text => {
+		effects.forEach(text => {
 			s += '<li>' + text + '</li>';
 		});
 		s += '</ul></div>';

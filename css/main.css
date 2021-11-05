@@ -5,6 +5,7 @@
 .legendary,.legendary:hover { font-weight: bold; color: #990099; }
 a.common, a.uncommon, a.rare, a.legendary { text-decoration: none; }
 a.common:hover, a.uncommon:hover, a.rare:hover, a.legendary:hover { text-decoration: underline; }
+i.common, i.uncommon, i.rare, i.legendary, i.common:hover, i.uncommon:hover, i.rare:hover, i.legendary:hover { font-weight: normal; }
 /* image sizes in list cards */
 .logocard,.logopower { background-size: cover; background-position: center center; }
 .logopower { width: 80px; height: 126px; }

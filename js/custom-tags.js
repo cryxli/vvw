@@ -47,7 +47,23 @@ window.customTags = window.customTags||function() {
 		const text = $(elem).text();
 		const rarity = $(elem).attr('rarity')||'common';
 		const id = $(elem).attr('id')||text.toLowerCase().replace(/ /g,'_')+'_'+rarity[0];
-		$(elem).replaceWith('<a href="'+url+'html/card.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
+		const divine = $(elem).attr('divine');
+		const wicked = $(elem).attr('wicked');
+		const value = $(elem).attr('value');
+		var s = '<a href="'+url+'html/card.htm?'+id;
+		if (!!divine) {
+			s += '&amp;divine='+divine;
+			if (!!value) {
+				s += '&amp;value='+value;
+			}
+		} else if (!!wicked) {
+			s += '&amp;wicked='+wicked;
+			if (!!value) {
+				s += '&amp;value='+value;
+			}
+		}
+		s += '" class="'+rarity+'">'+text+'</a>';
+		$(elem).replaceWith(s);
 	});
 
 	$('item').each((index,elem) => {
@@ -82,22 +98,25 @@ $(document).ready(function() {
 	s += '<div class="collapse navbar-collapse" id="navbarText">';
     s += '<ul class="navbar-nav me-auto mb-2 mb-lg-0">';
 	if (window.location.href.indexOf('/power.htm?') !== -1) {
-        s += '<li class="nav-item"><a class="nav-link active" href="'+url+'/html/powers.htm">Demon Powers</a></li>';
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/powers.htm">Demon Powers</a></li>';
 	}
 	if (window.location.href.indexOf('/card.htm?') !== -1) {
-        s += '<li class="nav-item"><a class="nav-link active" href="'+url+'/html/cards.htm">Destiny Cards</a></li>';
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/cards.htm">Destiny Cards</a></li>';
 	}
 	if (window.location.href.indexOf('/hex.htm?') !== -1) {
-        s += '<li class="nav-item"><a class="nav-link active" href="'+url+'/html/hexes.htm">Hexes</a></li>';
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/hexes.htm">Hexes</a></li>';
 	}
 	if (window.location.href.indexOf('/weapon.htm?') !== -1) {
-        s += '<li class="nav-item"><a class="nav-link active" href="'+url+'/html/weapons.htm">Weapons</a></li>';
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/weapons.htm">Weapons</a></li>';
 	}
 	if (window.location.href.indexOf('/item.htm?') !== -1) {
-        s += '<li class="nav-item"><a class="nav-link active" href="'+url+'/html/items.htm">Other Items</a></li>';
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/items.htm">Other Items</a></li>';
 	}
 	if (window.location.href.indexOf('/stone.htm?') !== -1) {
-        s += '<li class="nav-item"><a class="nav-link active" href="'+url+'/html/stones.htm">Power Stones</a></li>';
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/stones.htm">Power Stones</a></li>';
+	}
+	if (window.location.href.indexOf('/html/npc/') !== -1) {
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/npcs.htm">NPCs</a></li>';
 	}
     s += '</ul>';
     s += '</div>';

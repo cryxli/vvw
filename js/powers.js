@@ -18,5 +18,5 @@ const powers = [
 	{name:'Heartbreaker', dlc:2},
 	{name:'Iron Fist', dlc:2},
 	{name:'Lost in the Ozone', dlc:2},
-	{name:'Paralyzer', dlc:2},
+	{name:'Paralyzed', dlc:2},
 ];
