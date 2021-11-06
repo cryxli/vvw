@@ -75,28 +75,10 @@ $(document).ready(function() {
 		document.title = 'Victor Vran - Destiny Card: '+cardName;
 	}
 
-	function readParam(paramKey, defaultValue) {
-		const key = (paramKey||'id').toLowerCase();
-		var paramList = decodeURI(window.location.search||'?').substring(1);
-		if (paramList.indexOf('id=') === -1) { paramList = 'id='+paramList; }
-		var pos = paramList.toLowerCase().indexOf(key+'=');
-		if (pos === -1) {
-			return defaultValue||null;
-		}
-		pos += key.length+1;
-		var value = paramList.substring(pos);
-		pos = value.indexOf('&');
-		if (pos === -1) {
-			return value||defaultValue||null;
-		} else {
-			return value.substring(0,pos)||defaultValue||null;
-		}
-	}
-
 	function handlePrefix(card, effects, prefixString, prefixName, modAttrs) {
 		const list = modAttrs.filter(eff => eff.name === mod);
 		if (list.length === 1) {
-			const value = readParam('value');
+			const value = window.readParam('value');
 			list[0].attributes.filter(text => !!text).forEach(text => {
 				if (value !== null) {
 					text = text.replace(/<max>(.+)<\/max>/g,value);
@@ -114,7 +96,7 @@ $(document).ready(function() {
 		}
 	}
 
-	const id = readParam('id');
+	const id = window.readParam('id');
 	var list = cards.filter(card => window.id(card.name)+'_'+card.rarity[0] === id);
 	if (list.length === 0) {
 		window.location.href="cards.htm";
@@ -136,11 +118,11 @@ $(document).ready(function() {
 	card.attributes.filter(text => !!text).forEach(text => effects.push(text));
 	
 	var title = card.name;
-	var mod = readParam('divine');
+	var mod = window.readParam('divine');
 	if (!!mod) {
 		title = handlePrefix(card, effects, 'Divine', mod, divine);
 	}
-	mod = readParam('wicked');
+	mod = window.readParam('wicked');
 	if (!!mod) {
 		title = handlePrefix(card, effects, 'Wicked', mod, wicked);
 	}

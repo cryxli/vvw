@@ -1,3 +1,20 @@
+window.readParam = window.readParam||function(paramKey, defaultValue) {
+	const key = (paramKey||'id').toLowerCase();
+	var paramList = decodeURI(window.location.search||'?').substring(1);
+	if (paramList.indexOf('id=') === -1) { paramList = 'id='+paramList; }
+	var pos = paramList.toLowerCase().indexOf(key+'=');
+	if (pos === -1) {
+		return defaultValue||null;
+	}
+	pos += key.length+1;
+	var value = paramList.substring(pos);
+	pos = value.indexOf('&');
+	if (pos === -1) {
+		return value||defaultValue||null;
+	} else {
+		return value.substring(0,pos)||defaultValue||null;
+	}
+};
 window.customTags = window.customTags||function() {
 	var url = '../';
 	if (window.location.href.indexOf('/html/npc/') > -1) {
