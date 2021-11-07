@@ -49,13 +49,14 @@ window.customTags = window.customTags||function() {
 
 	$('weapon').each((index,elem) => {
 		const text = $(elem).text();
+		const rarity = $(elem).attr('rarity')||'common';
 		const id = $(elem).attr('id')||text.toLowerCase().replace(/ /g,'_');
-		$(elem).replaceWith('<a href="'+url+'html/weapon.htm?'+id+'" class="legendary">'+text+'</a>');
+		$(elem).replaceWith('<a href="'+url+'html/weapon.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
 	});
 
 	$('power').each((index,elem) => {
 		const text = $(elem).text();
-		const rarity = $(elem).attr('rarity')||'common';		
+		const rarity = $(elem).attr('rarity')||'common';
 		const id = text.toLowerCase().replace(/ /g,'_');
 		$(elem).replaceWith('<a href="'+url+'html/power.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
 	});
@@ -134,6 +135,9 @@ $(document).ready(function() {
 	}
 	if (window.location.href.indexOf('/html/npc/') !== -1) {
         s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/npcs.htm">NPCs</a></li>';
+	}
+	if (window.location.href.indexOf('/talisman.htm?') !== -1) {
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/talismans.htm">Talismans</a></li>';
 	}
     s += '</ul>';
     s += '</div>';
