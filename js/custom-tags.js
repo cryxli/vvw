@@ -15,7 +15,10 @@ window.readParam = window.readParam||function(paramKey, defaultValue) {
 		return value.substring(0,pos)||defaultValue||null;
 	}
 };
-window.customTags = window.customTags||function() {
+window.customTags = window.customTags||function(customConfig) {
+	const config=$.extend({img:false,name:true},customConfig);
+	if (!config.img&&!config.name) { config.name = true; }
+
 	var url = '../';
 	if (window.location.href.indexOf('/html/npc/') > -1) {
 		url = '../../';
@@ -43,22 +46,36 @@ window.customTags = window.customTags||function() {
 
 	$('outfit').each((index,elem) => {
 		const text = $(elem).text();
-		const id = text.toLowerCase().replace(/ /g,'_');
-		$(elem).replaceWith('<a href="'+url+'html/item.htm?'+id+'" class="legendary">'+text+'</a>');
+		const id = text.toLowerCase().replace(/[' ]/g,'_');
+		if (config.img&&!config.name) {
+			$(elem).replaceWith('<a href="'+url+'html/item.htm?'+id+'"><img src="'+url+'img/item/outfit/'+id+'.png" alt="'+text+'" title="'+text+'" class="legendary" /></a>');
+		} else {
+			$(elem).replaceWith('<a href="'+url+'html/item.htm?'+id+'" class="legendary">'+text+'</a>');
+		}
 	});
 
 	$('weapon').each((index,elem) => {
 		const text = $(elem).text();
 		const rarity = $(elem).attr('rarity')||'common';
 		const id = $(elem).attr('id')||text.toLowerCase().replace(/ /g,'_');
-		$(elem).replaceWith('<a href="'+url+'html/weapon.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
+		if (config.img&&!config.name&&!!weapons) {
+			const type = ((weapons.filter(w=>window.id(w.name)===id)[0]||{type:'Sword'}).type||'Sword').toLowerCase().replace(/ /g,'_');
+			$(elem).replaceWith('<a href="'+url+'html/weapon.htm?'+id+'" class="'+rarity+'"><img src="'+url+'img/weapon/'+type+'/'+id+'.png" alt="'+text+'" title="'+text+'" class="'+rarity+'"/></a>');
+		} else {
+			$(elem).replaceWith('<a href="'+url+'html/weapon.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
+		}
 	});
 
 	$('power').each((index,elem) => {
 		const text = $(elem).text();
 		const rarity = $(elem).attr('rarity')||'common';
 		const id = text.toLowerCase().replace(/ /g,'_');
-		$(elem).replaceWith('<a href="'+url+'html/power.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
+		if (config.img&&!config.name) {
+			const img = id+'_'+rarity[0];
+			$(elem).replaceWith('<a href="'+url+'html/power.htm?'+id+'" class="'+rarity+'"><img src="'+url+'img/dp/'+img+'.png" alt="'+text+'" title="'+text+'" class="'+rarity+'"/></a>');
+		} else {
+			$(elem).replaceWith('<a href="'+url+'html/power.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
+		}
 	});
 	
 	$('card').each((index,elem) => {
@@ -80,7 +97,13 @@ window.customTags = window.customTags||function() {
 				s += '&amp;value='+value;
 			}
 		}
-		s += '" class="'+rarity+'">'+text+'</a>';
+		s += '" class="'+rarity+'">';
+		if (config.img&&!config.name) {
+			s += '<img src="'+url+'img/dc/'+id+'.png" alt="'+text+'" title="'+text+'" class="'+rarity+'"/>';
+		} else {
+			s += text;
+		}
+		s += '</a>';
 		$(elem).replaceWith(s);
 	});
 
@@ -88,7 +111,12 @@ window.customTags = window.customTags||function() {
 		const text = $(elem).text();
 		const rarity = $(elem).attr('rarity')||'common';
 		const id = $(elem).attr('id')||text.toLowerCase().replace(/ /g,'_');
-		$(elem).replaceWith('<a href="'+url+'html/item.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
+		if (config.img&&!config.name&&!!items) {
+			const type = ((items.filter(i=>window.id(i.name)===id)[0]||{type:'Potion'}).type||'Potion').toLowerCase().replace(/ /g,'_');
+			$(elem).replaceWith('<a href="'+url+'html/item.htm?'+id+'" class="'+rarity+'"><img src="'+url+'img/item/'+type+'/'+id+'.png" alt="'+text+'" title="'+text+'"/></a>');
+		} else {
+			$(elem).replaceWith('<a href="'+url+'html/item.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
+		}
 	});
 
 	$('stone').each((index,elem) => {
