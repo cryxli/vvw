@@ -20,7 +20,7 @@ window.customTags = window.customTags||function(customConfig) {
 	if (!config.img&&!config.name) { config.name = true; }
 
 	var url = '../';
-	if (window.location.href.indexOf('/html/npc/') > -1) {
+	if (window.location.href.indexOf('/html/npc/') > -1 || window.location.href.indexOf('/html/dlc/') > -1) {
 		url = '../../';
 	} else if (window.location.href.indexOf('/html/') === -1) {
 		url = '';
@@ -139,7 +139,7 @@ window.id=window.id||function(text) {
 
 $(document).ready(function() {
 	var url = '../';
-	if (window.location.href.indexOf('/html/npc/') > -1) {
+	if (window.location.href.indexOf('/html/npc/') > -1 || window.location.href.indexOf('/html/dlc/') > -1) {
 		url = '../../';
 	} else if (window.location.href.indexOf('/html/') === -1) {
 		url = '';
@@ -151,31 +151,31 @@ $(document).ready(function() {
 	s += '<div class="collapse navbar-collapse" id="navbarText">';
     s += '<ul class="navbar-nav me-auto mb-2 mb-lg-0">';
 	if (window.location.href.indexOf('/power.htm?') !== -1) {
-        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/powers.htm">Demon Powers</a></li>';
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'html/powers.htm">Demon Powers</a></li>';
 	}
 	if (window.location.href.indexOf('/card.htm?') !== -1) {
-        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/cards.htm">Destiny Cards</a></li>';
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'html/cards.htm">Destiny Cards</a></li>';
 	}
 	if (window.location.href.indexOf('/hex.htm?') !== -1) {
-        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/hexes.htm">Hexes</a></li>';
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'html/hexes.htm">Hexes</a></li>';
 	}
 	if (window.location.href.indexOf('/weapon.htm?') !== -1) {
-        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/weapons.htm">Weapons</a></li>';
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'html/weapons.htm">Weapons</a></li>';
 	}
 	if (window.location.href.indexOf('/item.htm?') !== -1) {
-        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/items.htm">Other Items</a></li>';
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'html/items.htm">Other Items</a></li>';
 	}
 	if (window.location.href.indexOf('/stone.htm?') !== -1) {
-        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/stones.htm">Power Stones</a></li>';
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'html/stones.htm">Power Stones</a></li>';
 	}
 	if (window.location.href.indexOf('/html/npc/') !== -1) {
-        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/npcs.htm">NPCs</a></li>';
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'html/npcs.htm">NPCs</a></li>';
 	}
 	if (window.location.href.indexOf('/talisman.htm?') !== -1) {
-        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/talismans.htm">Talismans</a></li>';
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'html/talismans.htm">Talismans</a></li>';
 	}
-	if (window.location.href.indexOf('/effect.htm?') !== -1) {
-        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/effects.htm">Effects</a></li>';
+	if (window.location.href.indexOf('/dlc/') !== -1) {
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'html/dlcs.htm">DLCs</a></li>';
 	}
     s += '</ul>';
     s += '</div>';
