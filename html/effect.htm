@@ -32,7 +32,15 @@
 <script>
 $(document).ready(function() {
 	const id = window.readParam('id');
-	const effect = effects.filter(effect => window.id(effect.name) === id)[0];
+	var effect = effects.filter(effect => window.id(effect.name) === id)[0];
+	if (!effect) {
+		// check aliases
+		effect = effects.filter(effect => (effect.alias||[]).includes(id))[0];
+		if (!!effect) {
+			// redirect to real ID
+			window.location.href="effect.htm?"+window.id(effect.name);
+		}
+	}
 	if (!effect) {
 		window.location.href="effects.htm";
 		return;
@@ -42,9 +50,9 @@ $(document).ready(function() {
 	document.title = 'Victor Vran - Effect: '+effect.name;
 	const img = '../img/cond/'+id+'.png';
 	$('#img').append('<img src="'+img+'" alt="'+effect.card+'"/>');
-	
 	effect.effects.forEach(text => $('#effects').append('<li>'+text+'</li>'));
 	
+	window.customTags();
 });
 </script>
 </body>

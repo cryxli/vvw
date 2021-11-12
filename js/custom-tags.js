@@ -124,6 +124,13 @@ window.customTags = window.customTags||function(customConfig) {
 		const id = $(elem).attr('id')||text.toLowerCase().replace(/ /g,'_');
 		$(elem).replaceWith('<a href="'+url+'html/stone.htm?'+id+'" class="rare">'+text+'</a>');
 	});
+	
+	$('talisman').each((index,elem) => {
+		const text = $(elem).text();
+		const rarity = $(elem).attr('rarity')||'uncommon';
+		const id = $(elem).attr('id')||text.toLowerCase().replace(/ /g,'_');
+		$(elem).replaceWith('<a href="'+url+'html/talisman.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
+	});
 
 };
 window.id=window.id||function(text) {
@@ -166,6 +173,9 @@ $(document).ready(function() {
 	}
 	if (window.location.href.indexOf('/talisman.htm?') !== -1) {
         s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/talismans.htm">Talismans</a></li>';
+	}
+	if (window.location.href.indexOf('/effect.htm?') !== -1) {
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'/html/effects.htm">Effects</a></li>';
 	}
     s += '</ul>';
     s += '</div>';
