@@ -1,3 +1,12 @@
+window.urlPrefix = window.urlPrefix||function() {
+	if (window.location.href.lastIndexOf('/') > window.location.href.indexOf('/html/') + 7) {
+		return '../../';
+	} else if (window.location.href.indexOf('/html/') === -1) {
+		return '';
+	} else {
+		return '../';
+	}
+};
 window.readParam = window.readParam||function(paramKey, defaultValue) {
 	const key = (paramKey||'id').toLowerCase();
 	var paramList = decodeURI(window.location.search||'?').substring(1);
@@ -18,13 +27,8 @@ window.readParam = window.readParam||function(paramKey, defaultValue) {
 window.customTags = window.customTags||function(customConfig) {
 	const config=$.extend({img:false,name:true},customConfig);
 	if (!config.img&&!config.name) { config.name = true; }
+	const url = window.urlPrefix();
 
-	var url = '../';
-	if (window.location.href.indexOf('/html/npc/') > -1 || window.location.href.indexOf('/html/dlc/') > -1) {
-		url = '../../';
-	} else if (window.location.href.indexOf('/html/') === -1) {
-		url = '';
-	}
 	
 	$('npc').each((index,elem) => {
 		const text = $(elem).text();
@@ -138,12 +142,7 @@ window.id=window.id||function(text) {
 };
 
 $(document).ready(function() {
-	var url = '../';
-	if (window.location.href.indexOf('/html/npc/') > -1 || window.location.href.indexOf('/html/dlc/') > -1) {
-		url = '../../';
-	} else if (window.location.href.indexOf('/html/') === -1) {
-		url = '';
-	}
+	const url = window.urlPrefix();
 
 	$('nav').addClass(['navbar','navbar-expand-lg','navbar-dark','bg-dark']);
 	var s = '<div class="container-fluid"><a class="navbar-brand" href="'+url+'index.htm">Victor Vran </a>';

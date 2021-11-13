@@ -22,10 +22,11 @@ THe soundtrack and artbook are only available on Steam.</p>
 <script src="../js/custom-tags.js"></script>
 <script>
 $(document).ready(function() {
+	const url = window.urlPrefix();
 	dlcs.forEach(dlc => {
 		var s = '<li>';
-		if (!!dlc.url && dlc.url.indexOf('/index.htm') === -1) {
-			s += '<a href="'+dlc.url+'">'+dlc.name+'</a>';
+		if (!!dlc.url && dlc.url.indexOf('index.htm') === -1) {
+			s += '<a href="'+url+dlc.url+'">'+dlc.name+'</a>';
 			if (!!dlc.free) {
 				s += ' (free)';
 			}
