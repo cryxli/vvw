@@ -1,8 +1,7 @@
 window.urlPrefix = window.urlPrefix||function() {
-	if (window.location.href.lastIndexOf('/') > window.location.href.indexOf('/html/') + 7) {
-		return '../../';
-	} else if (window.location.href.indexOf('/html/') === -1) {
-		return '';
+	if (window.location.href.indexOf('/html/') !== -1) {
+		var s = window.location.href.substring(window.location.href.indexOf('/html/')+5).replace(/[^\/]/g,'').length;
+		return '../'.repeat(s);
 	} else {
 		return '../';
 	}

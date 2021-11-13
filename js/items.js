@@ -32,9 +32,9 @@ const items = [
 	{name:'Zealot\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['High Armor','Increases Health by 500']},
 	{name:'Ad&shy;ven&shy;tur&shy;er\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['0-30 armor','Increases the Destiny Slots by 1','Increases maximum Overdrive by 2000','Increases Overdrive gain by 10-30%']},
 	{name:'High&shy;lander\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['20-70 armor','You gain 200-300 Overdrive when you use a weapon special attack, but attacks no longer grant Overdrive','Reduces weapon cooldowns by 15%']},
-	{name:'Lemmy\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['Increases maximumx Oderdrive by 2000 (1 charge)','You gain 200 armor while below 50% health'], dlc:2},
-	{name:'Phil\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['Increases the Destiny Slot by 1','Increases the Destiny Points by 4','Decreases Overdrive gain by 20%'], dlc:2},
-	{name:'Mikkey\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['Gain 40% of maximum health when using a Demon Power'], dlc:2},
+	{name:'Lemmy\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['Increases maximumx Oderdrive by 2000 (1 charge)','You gain 50-200 armor while below 50% health'], dlc:2},
+	{name:'Phil\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['Increases the Destiny Slot by 1','Increases the Destiny Points by 4','Decreases Overdrive gain by 40-20%'], dlc:2},
+	{name:'Mikkey\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['Gain 20-40% of maximum health when using a Demon Power'], dlc:2},
 	//
 	{name:'Gift Box', id:'gift_box_c', rarity:'common', type:'Potion', attributes:['Contains a random piece of equipment','Combine with other Gift Boxes in Transmutation to get better items']},
 	{name:'Gift Box', id:'gift_box_u', rarity:'uncommon', type:'Potion', attributes:['Contains a random piece of equipment','Combine with other Gift Boxes in Transmutation to get better items']},

@@ -19,7 +19,7 @@ const talismans = [
 		recipe:['<power rarity="legendary">Sunray</power>','<item>Red Dye</item>','<talisman>Flame</talisman>']},
 	{name:'Gadget', rarity:"rare", attributes:['All enemies in 10m radius become <effect>Electrocuted</effect> for <max>10-34</max> sec.','Lightning strike hit nearby <effect>Electrocuted</effect> enemies.'], 
 		recipe:['<power rarity="rare">Dark Mist</power>','<card rarity="legendary">The Lightning</card>','<talisman>Gizmo</talisman>']},
-	{name:'Gizmo', rarity:'uncommon', attributes:['All enemies in 10m radius become <effect>Electrocuted</effect> for <max>20-44</max> sec.','Charge with 350 Energy per Consumable used'], 
+	{name:'Gizmo', rarity:'uncommon', attributes:['All enemies in 10m radius become <effect>Electrocuted</effect> for <max>20-44</max> sec.'], 
 		recipe:['<item rarity="uncommon">Flash Bomb</item>','<i class="">rare lightning gun</i>','<card rarity="rare">Wildcard</card>']},
 	{name:'Idol', rarity:'rare', attributes:['Gain <effect>Brutality</effect> for <max>60-132</max> sec.'], 
 		recipe:['<power rarity="legendary">Berserk Aura</power>','<item rarity="rare">Black Dye</item>','<talisman rarity="uncommon">Effigy</talisman>']},
