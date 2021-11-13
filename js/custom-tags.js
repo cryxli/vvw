@@ -149,7 +149,7 @@ $(document).ready(function() {
 	
 	s += '<div class="collapse navbar-collapse" id="navbarText">';
     s += '<ul class="navbar-nav me-auto mb-2 mb-lg-0">';
-	if (window.location.href.indexOf('/power.htm?') !== -1) {
+	if (window.location.href.indexOf('/power.htm?') !== -1 || window.location.href.indexOf('/html/dp/') !== -1) {
         s += '<li class="nav-item"><a class="nav-link" href="'+url+'html/powers.htm">Demon Powers</a></li>';
 	}
 	if (window.location.href.indexOf('/card.htm?') !== -1) {
