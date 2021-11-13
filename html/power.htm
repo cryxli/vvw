@@ -56,8 +56,12 @@ $(document).ready(function() {
 		}
 	}
 
-	const id = window.readParam('id');
-	const power = powers.filter(p => window.id(p.name) === id)[0];
+	var id = window.readParam('id');
+	var power = powers.filter(p => window.id(p.name) === id)[0];
+	if (!power && id.lastIndexOf('_')>-1) {
+		id = id.substring(0,id.lastIndexOf('_'));
+		power = powers.filter(p => window.id(p.name) === id)[0];
+	}
 	if (!power) {
 		window.location.href="powers.htm";
 	} else if (!!power.url) {
