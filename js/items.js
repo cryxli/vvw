@@ -22,6 +22,7 @@ const items = [
 	{name:'Green Dye', rarity:'uncommon', type:'Ingredient', attributes:['Use in Transmutation to change the color of your outfit']},
 	{name:'Red Dye', rarity:'uncommon', type:'Ingredient', attributes:['Use in Transmutation to change the color of your outfit']},
 	{name:'White Dye', rarity:'rare', type:'Ingredient', attributes:['Use in Transmutation to change the color of your outfit']},
+	{name:'Legendary Dye', rarity:'legendary', type:'Ingredient', attributes:['Use in Transmutation to change the color of your outfit','This "color" adds a glow effect similar to divine or wicked cards to an outfit.']},
 	// --- outfits
 	{name:'Hunter\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['Gain 100% of the damage taken as Overdrive']},
 	{name:'Cav&shy;a&shy;lier\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['You gain 80 Overdrive every second, but attacks no longer grant Overdrive']},

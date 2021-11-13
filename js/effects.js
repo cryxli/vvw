@@ -7,7 +7,7 @@ const effects = [
 
 	{name:'Brutality', effects:['Outgoing damage is increased by 50%']},
 	{name:'Burning', effects:['Deals 40 damage every second']},
-	{name:'Crippled', effects:['Movement speed is decreased by 66%'], alias:['cripple']},
+	{name:'Crippled', effects:['Movement speed is decreased by 66%'], alias:['cripple','cripples']},
 	{name:'Daze', effects:['Stunned and unable to attack'], alias:['dazed']},
 	{name:'Defiant', effects:['Cannot be <effect>dazed</effect> or feared']},
 	{name:'Diamond Shield', effects:['Absorbs damage from attacks','<power>Diamond</power>']},

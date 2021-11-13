@@ -4,7 +4,7 @@ const talismans = [
 	{name:'Appartus', rarity:"legendary", attributes:['All enemies within 10m radius become <effect>Electrocuted</effect> for <max>10-34</max> sec.','A number of ball lightnings appear and start targeting <effect>Electrocuted</effect> enemies'], 
 		recipe:['<power rarity="legendary">Blink</power>','<i class="legendary">legendary lightning gun</i>','<talisman>Gadget</talisman>']},
 	{name:'Artifact', rarity:"legendary", attributes:['All attacks are critical hits for the next <max>15-33</max> sec.'], 
-		recipe:['<weapon rarity="legendary" type="Sword">Kladenets</weapon>','<i class="legendary">legendary dye</i>','<talisman>Idol</talisman>']},	
+		recipe:['<weapon rarity="legendary" type="Sword">Kladenets</weapon>','<item rarity="legendary">Legendary Dye</item>','<talisman>Idol</talisman>']},	
 	{name:'Boon', rarity:"rare", attributes:['Gain several positive conditions for <max>20-44</max> sec'], 
 		recipe:['<power rarity="legendary">Sanguine Aura</power>','<item rarity="rare">White Dye</item>','<talisman>Charm</talisman>']},
 	{name:'Charm', rarity:"uncommon", attributes:['Gain Invulnerability for <max>7-13</max> sec.'], 
@@ -26,7 +26,7 @@ const talismans = [
 	{name:'Phoenix', rarity:"legendary", attributes:['Teleport to another place causing fierce explosions on both ends.','Each explosion deals (~22% of weapon damage) damage to each monster in 3m radius.'], 
 		recipe:['<power rarity="legendary">Meteor</power>','<card rarity="legendary">The Sun</card>','<talisman>Ember</talisman>']},
 	{name:'Relic', rarity:"legendary", attributes:['Full heal.','Each hit is an instan kill for the next <max>7-13</max> sec.','Doesn\'t affect Champions, Bosses or Tyrants.'], 
-		recipe:['<card rarity="legendary">Justice</card>','<i class="legendary">Legendary Dye</i>','<talisman>Boon</talisman>']},
+		recipe:['<card rarity="legendary">Justice</card>','<item rarity="legendary">Legendary Dye</item>','<talisman>Boon</talisman>']},
 	{name:'Trinket', rarity:'uncommon', attributes:['Applies the <effect>Slow</effect> condition to all enemies in 10m radius for <max>20-44</max> sec.'], 
 		recipe:['<i class="common">common weapon</i>','<card>The Fool</card>','<i class="rare">rare demon power</i>']},
 ];
