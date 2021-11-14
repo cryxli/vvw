@@ -46,7 +46,7 @@ const cards = [
 	{name:'The Al&shy;chemist', rarity:'rare', points:5, attributes:['Lower the cooldown of consumables by 40%'], unique:true},
 	{name:'The Bar&shy;bar&shy;ian', rarity:'uncommon', points:5, attributes:['Lower attack cooldowns by 1 sec. when you overkill an enemy','Refresh all cooldowns when the overdrive bar is filled'], unique:true},
 	{name:'The Devil', rarity:'legendary', points:4, attributes:['+20 armor penetration per equipped wicked card','Enemies drop orbs on hit that give <effect>Brutality</effect> when picked up','(Wicked) This card will always have wicked attribute.'], unique:true},
-	{name:'The Grace', rarity:'legendary', points:2, attributes:['Become immune to attacks while dodging'], unique:true, dlc:2},
+	{name:'Grace', rarity:'legendary', points:2, attributes:['Become immune to attacks while dodging'], unique:true, dlc:2},
 	{name:'The Inventor', rarity:'legendary', points:3, attributes:['Doubles the damage and increases the effects and range of bombs','Leave a Frost Bomb behind when you dodge (60 sec. cooldown)'], unique:true},
 	{name:'The Runner', rarity:'common', points:2, attributes:['+20% movement speed'], unique:true},
 	{name:'The Saint', rarity:'legendary', points:4, attributes:['+15 armor per equipped Divine card','Enemies drop health orbs on hit that restore 200 health when picked up (8 sec. cooldown)','(Divine) This card will always have Divine attribute.'], unique:true},
