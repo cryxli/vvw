@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="../css/main.css" rel="stylesheet">
+	<title>Victor Vran - Location</title>
+</head>
+<body><nav></nav>
+<div class="container">
+<h1>Location</h1>
+<ul id="notes"></ul>
+<img/>
+<p id="secrets"></p>
+
+<section id="links">
+<h2>Access to other areas</h2>
+<ul></ul>
+</section>
+
+<section id="normal">
+<h2>Normal Challenges</h2>
+<ul></ul>
+</section>
+
+<section id="elite">
+<h2>Elite Challenges</h2>
+<ul></ul>
+</section>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../js/locations.js"></script>
+<script src="../js/custom-tags.js"></script>
+<script>
+$(document).ready(function() {
+	const id = window.readParam('id');
+	const loc = locations.filter(l => window.id(l.name) === id)[0];
+	if (!loc) {
+		window.location.href="locations.htm";
+		return;
+	}
+	
+	$('h1').html(loc.name);
+	document.title = 'Victor Vran - Location: '+loc.name;
+	if (!!loc.noimage) {
+		$('img').remove();
+	} else {
+		$('img').attr('src', '../img/maps/'+id+'.jpg');
+		$('img').attr('alt', loc.name);
+		$('img').attr('title', loc.name);
+	}
+	
+	const notes = loc.notes||[];
+	if (notes.length > 0) {
+		notes.forEach(text => $('#notes').append('<li>'+text+'</li>'));
+	}
+	
+	const secrets = loc.secrets||0;
+	if (secrets === 0) {
+		$('#secrets').html('No secrets');
+	} else {
+		$('#secrets').html(secrets+' secrets');
+	}
+	
+	const links = loc.links||[];
+	if (links.length === 0) {	
+		$('#links').addClass('d-none');
+	} else {
+		links.forEach(text => $('#links ul').append('<li><a href="location.htm?'+window.id(text)+'">'+text+'</a></li>'));
+	}
+
+	const normal = loc.normal||[];
+	if (normal.length === 0) {
+		$('#normal').addClass('d-none');
+	} else {
+		normal.forEach(text => $('#normal ul').append('<li>'+text+'</li>'));
+	}
+	
+	const elite = loc.elite||[];
+	if (elite.length === 0) {
+		$('#elite').addClass('d-none');
+	} else {
+		elite.forEach(text => $('#elite ul').append('<li>'+text+'</li>'));
+	}
+
+	window.customTags();
+});
+</script>
+</body>
+</html>

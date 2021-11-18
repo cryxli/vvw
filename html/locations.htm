@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="../css/main.css" rel="stylesheet">
+	<title>Victor Vran - Locations</title>
+</head>
+<body><nav></nav>
+<div class="container">
+<h1>Locations</h1>
+
+<section>
+<h2>Base Game</h2>
+<ul id="victorvran"></ul>
+</section>
+
+<section>
+<h2>Fractured Worlds</h2>
+<ul id="worlds"></ul>
+</section>
+
+<section>
+<h2>Mot&ouml;rhead</h2>
+<ul id="morothead"></ul>
+</section>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../js/locations.js"></script>
+<script src="../js/custom-tags.js"></script>
+<script>
+$(document).ready(function() {
+	function buildTree(dlc) {
+		var tree = [];
+		var lookup = {};
+		locations.filter(loc => (loc.dlc||0) === dlc).forEach(loc => {
+			loc.children = [];
+			var first = (loc.links||[])[0];
+			if (!first) {
+				tree.push(loc);
+			} else {
+				var parent = lookup[first];
+				if (!parent) {
+					tree.push(loc);
+				} else {
+					parent.children.push(loc);
+				}
+			}
+			lookup[loc.name] = loc;
+		});
+		return tree;
+	}
+
+	function listChildren(node) {
+		if (node.children.length > 0) {
+			var s = '<ul>';
+			node.children.forEach(loc => s += '<li><a href="../html/location.htm?'+window.id(loc.name)+'">'+loc.name+'</a>'+listChildren(loc)+'</li>');
+			s += '</ul>';
+			return s;
+		} else {
+			return '';
+		}
+	}
+
+	var s = '';
+	buildTree(0).forEach(loc => s += '<li><a href="../html/location.htm?'+window.id(loc.name)+'">'+loc.name+'</a>'+listChildren(loc)+'</li>');
+	$('#victorvran').append(s);
+	
+	s = '';
+	buildTree(1).forEach(loc => s += '<li><a href="../html/location.htm?'+window.id(loc.name)+'">'+loc.name+'</a>'+listChildren(loc)+'</li>');
+	$('#worlds').append(s);
+	
+	s = '';
+	buildTree(2).forEach(loc => s += '<li><a href="../html/location.htm?'+window.id(loc.name)+'">'+loc.name+'</a>'+listChildren(loc)+'</li>');
+	$('#morothead').append(s);
+});
+</script>
+</body>
+</html>

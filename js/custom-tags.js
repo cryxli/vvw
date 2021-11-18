@@ -134,6 +134,11 @@ window.customTags = window.customTags||function(customConfig) {
 		const id = $(elem).attr('id')||text.toLowerCase().replace(/ /g,'_');
 		$(elem).replaceWith('<a href="'+url+'html/talisman.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
 	});
+	
+	$('hex').each((index,elem) => {
+		const text = $(elem).text();
+		$(elem).replaceWith('<a href="'+url+'html/hexes.htm" class="legendary">'+text+'</a>');
+	});
 
 };
 window.id=window.id||function(text) {
@@ -174,6 +179,9 @@ $(document).ready(function() {
 	}
 	if (window.location.href.indexOf('/dlc/') !== -1) {
         s += '<li class="nav-item"><a class="nav-link" href="'+url+'html/dlcs.htm">DLCs</a></li>';
+	}
+	if (window.location.href.indexOf('/location.htm?') !== -1) {
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'html/locations.htm">Locations</a></li>';
 	}
     s += '</ul>';
     s += '</div>';

@@ -40,5 +40,5 @@ const items = [
 	{name:'Gift Box', id:'gift_box_u', rarity:'uncommon', type:'Potion', attributes:['Contains a random piece of equipment','Combine with other Gift Boxes in Transmutation to get better items']},
 	{name:'Gift Box', id:'gift_box_r', rarity:'rare', type:'Potion', attributes:['Contains a random piece of equipment','Combine with other Gift Boxes in Transmutation to get better items']},
 	{name:'Gift Box', id:'gift_box_l', rarity:'legendary', type:'Potion', attributes:['']},
-	{name:'Pumpkin Pie', rarity:'legendary', type:'Potion', attributes:['Eat Pumpkin Pie to travel to the secret pumpkin area.','<i>This pie smells unbelievably delicious. Would you take a bite?</i>']},
+	{name:'Pumpkin Pie', rarity:'legendary', type:'Potion', attributes:['Eat Pumpkin Pie to travel to the <location>Secret Pumpkin Level</location>.','<i>This pie smells unbelievably delicious. Would you take a bite?</i>']},
 ];
