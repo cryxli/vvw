@@ -1,6 +1,6 @@
 const items = [
 	// --- potion
-	{name:'Lucky Rab&shy;bit\'s Foot', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Gives Luck for 5 sec.','Luck: Critical chance is increased by 100%']},
+	{name:'Lucky Rab&shy;bit\'s Foot', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Gives <effect>Luck</effect> for 5 sec.']},
 	{name:'Med&shy;ical Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 300 health and removes one negative effect','Heals extra 150 health, if an effect is removed']},
 	{name:'Greater Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 500 health and removes one negative effect','Heals extra 250 health, if an effect is removed']},
 	{name:'Superior Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 750 health and removes one negative effect','Heals extra 250 health, if an effect is removed']},
@@ -39,6 +39,7 @@ const items = [
 	{name:'Gift Box', id:'gift_box_c', rarity:'common', type:'Potion', attributes:['Contains a random piece of equipment','Combine with other Gift Boxes in Transmutation to get better items']},
 	{name:'Gift Box', id:'gift_box_u', rarity:'uncommon', type:'Potion', attributes:['Contains a random piece of equipment','Combine with other Gift Boxes in Transmutation to get better items']},
 	{name:'Gift Box', id:'gift_box_r', rarity:'rare', type:'Potion', attributes:['Contains a random piece of equipment','Combine with other Gift Boxes in Transmutation to get better items']},
-	{name:'Gift Box', id:'gift_box_l', rarity:'legendary', type:'Potion', attributes:['']},
+	{name:'Gift Box', id:'gift_box_l', rarity:'legendary', type:'Potion', attributes:['Contains a random piece of equipment']},
+	{name:'Carved Box', rarity:'rare', type:'Potion', attributes:['Contains a random piece of equipment','<i>Trick or Treat!</i>']},
 	{name:'Pumpkin Pie', rarity:'legendary', type:'Potion', attributes:['Eat Pumpkin Pie to travel to the <location>Secret Pumpkin Level</location>.','<i>This pie smells unbelievably delicious. Would you take a bite?</i>']},
 ];

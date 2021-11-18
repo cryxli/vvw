@@ -19,7 +19,7 @@ const locations = [
 		normal:['Slay 40 Monsters with Rapier','Find 3 Secrets','Slay 8 Undead Dancers','Slay 4 Spectral Binders with Hammer','Slay 80 Monsters without using potions and Demon Powers'],
 		elite:['Slay 100 Monsters without dying and without using Potions, Shrines and Demon Powers','Slay 35 Monsters without dying while you are affected by <effect>Frailty</effect>','Slay 50 Monsters within 120 seconds','Slay Adrian The Fallen with 5 active <hex>Hexes</hex>','Slay Adrian The Fallen without using Potions and Shrines']},
 	
-	{name:'Bottomless Pit', notes:['Endless randomized PvE battleground', 'Unlocked at level 36']},
+	{name:'Bottomless Pit', notes:['Endless randomized PvE battleground', 'Unlocked at level 36', '<npc>GebaN</npc> waits in the starting area.']},
 	{name:'Cauldron of Chaos',notes:['Daily changing random dungeon'],
 	 	normal:['Slay Lord of the Swamp with <hex>Hex of Malice</hex>, <hex>Hex of Tenacity</hex> and <hex>Hex of Time</hex>','Slay the Tyrant of the Mud-lands with Bombardier Spider\'s barrage attack','Slay the Gate Keeper with Bombardier Spider\'s barrage attack without dying','Slay the Hearts of Fire and Hearts of Ice while you are affected by Frost with 2 active <hex>Hexes</hex> (4)','Slay all Chromatic Essence aspects without dying with 5 active <hex>Hexes</hex>']},
 	
@@ -53,6 +53,7 @@ const locations = [
 		elite:['Slay 30 Monsters affected by <effect>Electrocuted</effect> witrh Shotgun','Overkill 20 Monsters with Rapier with a single hit','Slay 30 Monsters affected by <effect>Brutality</effect> without dying','Slay 80 Monsters without dying with 5 active <hex>Hexes</hex>','Slay 2 Vampires within 240 seconds without taking damage']},
  
 	{name:'Cemetery Grounds',links:['Deadlight Quarry','Infested Burrow','Forlorn Catacomb','Mausoleum of Bones'],secrets:6,
+		notes:['<npc>GebaN</npc> in the NW corner of the map, must be killed'],
 		normal:['Slay 25 Gorgoyles with Ranged Attacks','Slay 20 Monsters with Demon Powers','Slay 10 Champions','Slay Dharin the Dreaded Soul','Slay 40 Monsters with <hexHex of Time</hex>, <hex>Hex of Tyranny</hex> and <hexHex of Malice</hex>'],
 		elite:['Slay 100 Gargoyles without dying and without using Potions with <hex>Hex of Malice</hex>','Slay 10 Wraiths with Demon Powers with <hex>Hex of Time</hex>','Slay 50 Monsters affected by <effect>Bleeding</effect>','Slay Spite of Ignus with a Ranged Weapon with 5 active <hex>Hexes</hex>','Slay Trust Betrayed with a Melee Weapon with 5 active <hex>Hexes</hex>']},
 	{name:'Deadlight Quarry',links:['Cemetery Grounds'],secrets:5,
@@ -100,6 +101,7 @@ const locations = [
 		elite:['Slay 80 Monsters Spawned by Other Monsters without dying with <hex>Hex of Tyranny</hex>','Slay 7 Champions without dying and without using Potions and Demon Powers with <hex>Hex of Malice</hex> and <hex>Hex of Time</hex>','Slay 16 Demon Seeds without dying with 5 active <hex>Hexes</hex>','Slay Wa-Lee The Solicitor with 4 active <hex>Hexes</hex>','Slay Wa-Lee The Solicitor with 5 active <hex>Hexes</hex>']},
 
 	{name:'The Merchant Quarter',links:['The Cessways','The Freakshow','Heart of Frost','The Gauntlet','The Collector\'s Residence','The Reformatory'],secrets:5,
+		notes:['<npc>GebaN</npc> is N of center, must be killed'],
 		normal:['Slay Jost a Gargoyle','Slay 5 Thralls with a single Attack or Demon Power','Slay 10 Vampire Acolytes with Ranged Attacks with <hex>Hex of Time</hex>','Slay 20 Monsters withotu using Potions, Shrines and Demon Powers','Overkill 5 Champions'],
 		elite:['Slay 10 Vampire Acolytes with Demon Powers without dying','Slay 25 Vampires with Hand Mortar without dying','Slay 10 Vampires affected by <effect>Daze</effect> without dying','Overkill 60 Monsters within 360 seconds','Slay 70 Vampires without dying with 5 active <hex>Hexes</hex>']},
 	{name:'The Cessways',links:['The Merchant Quarter'],secrets:2,
