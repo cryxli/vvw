@@ -62,16 +62,26 @@ $(document).ready(function() {
 	}
 	
 	const secrets = loc.secrets||(loc.secret||[]).length;
+	var s = '';
 	if (secrets === 0) {
-		$('#secrets').html('No secrets');
+		s += 'No secrets'
 	} else {
-		$('#secrets').html(secrets+' secrets');
+		if (secrets > 1 ) {
+			s += secrets+' secrets'
+		} else {
+			s += '1 secret'
+		}
 		(loc.secret||[]).forEach(s => {
 			const x = s[0]-10;
 			const y = s[1]-10;
 			$('#map').append('<img src="../img/secret.png" alt="Secret" style="left: '+x+'px; top: '+y+'px;" class="secret"/>');
 		});
 	}
+	const monuments = loc.monuments||0;
+	if (monuments > 0) {
+		s += ', ' + monuments + ' monuments of Rock';
+	}
+	$('#secrets').html(s);
 	
 	const links = loc.links||[];
 	if (links.length === 0) {	
