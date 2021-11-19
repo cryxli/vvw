@@ -89,6 +89,9 @@ $(document).ready(function() {
 		s += '<div class="row mt-3">'
 		s += '<div class="col-2"><strong>Effects</strong></div>';
 		s += '<div class="col"><ul>';
+		if (!!weapon.dmg) { s += '<li>Damage: '+weapon.dmg+'</li>'; }
+		if (!!weapon.critChance) { s += '<li>Crit Chance: '+weapon.critChance+'%</li>'; }
+		if (!!weapon.critDmg) { s += '<li>Crit Damage: '+weapon.critDmg+'%</li>'; }
 		weapon.attributes.filter(text => !!text).forEach(text => {
 			s += '<li>' + text + '</li>';
 		});

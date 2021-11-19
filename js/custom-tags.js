@@ -2,6 +2,9 @@ window.urlPrefix = window.urlPrefix||function() {
 	if (window.location.href.indexOf('/html/') !== -1) {
 		var s = window.location.href.substring(window.location.href.indexOf('/html/')+5).replace(/[^\/]/g,'').length;
 		return '../'.repeat(s);
+	} else if (window.location.href.indexOf('index.htm') !== -1 || window.location.href.indexOf('build.htm') !== -1) {
+		// DEBUG dev
+		return '';
 	} else {
 		return '../';
 	}
@@ -132,7 +135,11 @@ window.customTags = window.customTags||function(customConfig) {
 		const text = $(elem).text();
 		const rarity = $(elem).attr('rarity')||'uncommon';
 		const id = $(elem).attr('id')||text.toLowerCase().replace(/ /g,'_');
-		$(elem).replaceWith('<a href="'+url+'html/talisman.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
+		if (config.img&&!config.name) {
+			$(elem).replaceWith('<a href="'+url+'html/talisman.htm?'+id+'" class="'+rarity+'"><img src="'+url+'img/talisman/'+id+'.png" alt="'+text+'"/></a>');
+		} else {
+			$(elem).replaceWith('<a href="'+url+'html/talisman.htm?'+id+'" class="'+rarity+'">'+text+'</a>');
+		}
 	});
 	
 	$('hex').each((index,elem) => {
