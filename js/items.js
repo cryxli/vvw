@@ -42,4 +42,8 @@ const items = [
 	{name:'Gift Box', id:'gift_box_l', rarity:'legendary', type:'Potion', attributes:['Contains a random piece of equipment']},
 	{name:'Carved Box', rarity:'rare', type:'Potion', attributes:['Contains a random piece of equipment','<i>Trick or Treat!</i>']},
 	{name:'Pumpkin Pie', rarity:'legendary', type:'Potion', attributes:['Eat Pumpkin Pie to travel to the <location>Secret Pumpkin Level</location>.','<i>This pie smells unbelievably delicious. Would you take a bite?</i>']},
+	//
+	{name:'The Point&shy;er of the As&shy;tro&shy;labe', rarity:'legendary', type:'Ingredient', attributes:['A tiny cursor which always turns in the direction of the next piece of the Astrolabe']},
+	{name:'The Frame of the As&shy;tro&shy;labe', rarity:'legendary', type:'Ingredient', attributes:['A metallic casing engraved with astral symbols and hieroglyphs']},
+	{name:'Shard of the As&shy;tro&shy;labe', rarity:'legendary', type:'Ingredient', attributes:['A dented piece of a disk which is engraved with shifting pictures of astral planes and strange places']},
 ];

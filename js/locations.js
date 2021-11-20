@@ -141,11 +141,11 @@ const locations = [
 		elite:['Slay 45 Miscreations without dying with 5 active <hex>Hexes</hex>','Slay Lord Gabriel in Stage 1 within 240 seconds without dying','Slay Lord Gabirel in Stage 2 while above 50% health without using Shrines','Slay Lord Gabriel in Stage 3 while he is affected by <effect>Brutality</effect>','Slay Lord Gabriel in Stage 3 without dying with 5 active <hex>Hexes</hex>']},
 
 	{name:'The Locus',dlc:1,notes:['The Locus is the hub of the Fractured Worlds campaign.']},
-	{name:'The Fracture',dlc:1,notes:['The Fracture is randomly generated and changes its challenges every day.'],noimage:true},
-	{name:'Hanging Gardens of Ea',dlc:1,noimage:true},
-	{name:'Cadaver City',dlc:1,noimage:true},
-	{name:'Amaranthine Autumn',dlc:1,noimage:true},
-	{name:'Lethean Caves',dlc:1,noimage:true},
+	{name:'The Fracture',dlc:1,notes:['Randomly generated infinite dungeon that changes every day.','Last known location of <item rarity="legendary">the Frame of the Astrolabe</item> on tier 10'],noimage:true},
+	{name:'Hanging Gardens of Ea',dlc:1,notes:['Randomly generated single level dungeon that changes every day.','Contains a <item rarity="legendary">Shard of the Astrolabe</item>'],noimage:true},
+	{name:'Cadaver City',dlc:1,notes:['Randomly generated single level dungeon that changes every day.','Contains a <item rarity="legendary">Shard of the Astrolabe</item>'],noimage:true},
+	{name:'Amaranthine Autumn',dlc:1,notes:['Randomly generated single level dungeon that changes every day.','Contains a <item rarity="legendary">Shard of the Astrolabe</item>'],noimage:true},
+	{name:'Lethean Caves',dlc:1,notes:['Randomly generated single level dungeon that changes every day.','Contains a <item rarity="legendary">Shard of the Astrolabe</item>'],noimage:true},
 	
 	{name:'The Pub at the End of Time',dlc:2,secrets:0,notes:['The Pub at the End of Time is the hub of the Mot&ouml;rhead campaign.']},
 	

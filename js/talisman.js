@@ -24,7 +24,7 @@ const talismans = [
 	{name:'Idol', rarity:'rare', attributes:['Gain <effect>Brutality</effect> for <max>60-132</max> sec.'], 
 		recipe:['<power rarity="legendary">Berserk Aura</power>','<item rarity="rare">Black Dye</item>','<talisman rarity="uncommon">Effigy</talisman>']},
 	{name:'Phoenix', rarity:"legendary", attributes:['Teleport to another place causing fierce explosions on both ends.','Each explosion deals (~22% of weapon damage) damage to each monster in 3m radius.'], 
-		recipe:['<power rarity="legendary">Meteor</power>','<card rarity="legendary">The Sun</card>','<talisman>Ember</talisman>']},
+		recipe:['<weapon rarity="legendary" type="Hammer">Meteor</weapon>','<card rarity="legendary">The Sun</card>','<talisman>Ember</talisman>']},
 	{name:'Relic', rarity:"legendary", attributes:['Full heal.','Each hit is an instan kill for the next <max>7-13</max> sec.','Doesn\'t affect Champions, Bosses or Tyrants.'], 
 		recipe:['<card rarity="legendary">Justice</card>','<item rarity="legendary">Legendary Dye</item>','<talisman>Boon</talisman>']},
 	{name:'Trinket', rarity:'uncommon', attributes:['Applies the <effect>Slow</effect> condition to all enemies in 10m radius for <max>20-44</max> sec.'], 
