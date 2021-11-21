@@ -28,11 +28,11 @@ const items = [
 	{name:'Cav&shy;a&shy;lier\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['You gain 80 Overdrive every second, but attacks no longer grant Overdrive']},
 	{name:'Vig&shy;i&shy;lante\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['Critical hits grant 150% more Overdrive','Normal Attacks no longer grant Overdrive']},
 	{name:'Wan&shy;der&shy;er\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['You gain 80 Overdrive every second, but attacks no longer grant Overdrive']},
-	{name:'Van&shy;guard\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['+40 armor penetration','Increases maximum oderdrivy by 2000 (1 charge)','Decreases overdrive gain by 10%']},
+	{name:'Van&shy;guard\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['+40 armor penetration','Increases maximum Overdrive by 2000 (1 charge)','Decreases overdrive gain by 10%']},
 	{name:'Zealot\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['High Armor','Increases Health by 500']},
 	{name:'Ad&shy;ven&shy;tur&shy;er\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['0-30 armor','Increases the Destiny Slots by 1','Increases maximum Overdrive by 2000','Increases Overdrive gain by 10-30%']},
 	{name:'High&shy;lander\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['20-70 armor','You gain 200-300 Overdrive when you use a weapon special attack, but attacks no longer grant Overdrive','Reduces weapon cooldowns by 15%']},
-	{name:'Lemmy\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['Increases maximumx Oderdrive by 2000 (1 charge)','You gain 50-200 armor while below 50% health'], dlc:2},
+	{name:'Lemmy\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['Increases maximumx Overdrive by 2000 (1 charge)','You gain 50-200 armor while below 50% health'], dlc:2},
 	{name:'Phil\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['Increases the Destiny Slot by 1','Increases the Destiny Points by 4','Decreases Overdrive gain by 40-20%'], dlc:2},
 	{name:'Mikkey\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['Gain 20-40% of maximum health when using a Demon Power'], dlc:2},
 	//
