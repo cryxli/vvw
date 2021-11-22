@@ -82,7 +82,6 @@ $(document).ready(function() {
 			} else {
 				return text;
 			}
-console.log(id, rarity);
 		}
 		return text;
 	}
@@ -145,10 +144,12 @@ console.log(id, rarity);
 		s += '<div class="col"><strong>Recipe</strong></div>';
 		s += '</div><div class="row">';
 		s += '<div class="offset-4 col-4 text-center"><img src="../img/talisman/'+id+'_recipe.png" alt="Recipe: '+talisman.name+'" /></div>';
-		s += '</div><div class="row mt-3">';		
+		s += '</div><div class="row mt-3" id="ingreds">';
 		ingred.forEach(text => s += '<div class="col-4 text-center">'+ingredImg(text)+'</div>');
 		s += '</div>';
 		$('#detail').append(s);
+		$('#ingreds div:first').removeClass('text-center').css('text-align', 'right');
+		$('#ingreds div:last').removeClass('text-center')
 	}
 
 	window.customTags();
