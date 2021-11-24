@@ -117,7 +117,7 @@ const locations = [
 	{name:'The Collector\'s Residence',links:['The Merchant Quarter'],secrets:1,
 		normal:['Slay 20 Monsters with Shotguns','Slay 15 Monsters with Demon Powers','Slay 5 Monsters with a single Attack or Demon Power','Slay 5 Vampires within 90 seconds','Slay 30 Monsters with 5 active <hex>Hexes</hex>'],
 		elite:['Slay 25 Monsters without dying while your are affected by <effect>Brutality</effect>','Slay Passion fo the Collector within 45 seconds with 5 active <hex>Hexes</hex>','Slay 5 Vampires without dying with 5 active <hex>Hexes</hex>','Slay 30 Monsters while above 50% health with 3 active <hex>Hexes</hex>','Slay 15 Monsters with Sword while above 50% health']},
-	{name:'The Reformatory',links:['The Merchant Quarter'],secrets:2,
+	{name:'The Reformatory',links:['The Merchant Quarter'],secrets:3,
 		normal:['Find 3 Secrets','Slay 5 Champions with Sword','Slay 60 Monsters without using Potions','Slay 80 Monsters within 240 seconds','Slay Vondrak within 120 seconds from entering the location'],
 		elite:['Slay 50 Monsters affected by <effect>Weakness</effect> without dying','Overkill 3 Champions','Slay 60 Monsters while above 60% health without using Potions','Slay 80 Monsters within 240 seconds with 5 active <hex>Hexes</hex>','Slay 7 Vampires within 90 seconds with <hex>Hex of Malive</hex>']},
 
