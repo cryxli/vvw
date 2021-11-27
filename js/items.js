@@ -1,9 +1,9 @@
 const items = [
 	// --- potion
-	{name:'Lucky Rab&shy;bit\'s Foot', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Gives <effect>Luck</effect> for 5 sec.']},
-	{name:'Med&shy;ical Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 300 health and removes one negative effect','Heals extra 150 health, if an effect is removed']},
-	{name:'Greater Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 500 health and removes one negative effect','Heals extra 250 health, if an effect is removed']},
-	{name:'Superior Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 750 health and removes one negative effect','Heals extra 250 health, if an effect is removed']},
+	{name:'Lucky Rab&shy;bit\'s Foot', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Gives <effect>Luck</effect> for 5 sec.','Very rare drop.']},
+	{name:'Med&shy;ical Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 300 health and removes one negative effect','Heals extra 150 health, if an effect is removed','Rare drop only.']},
+	{name:'Greater Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 500 health and removes one negative effect','Heals extra 250 health, if an effect is removed','Only obtainable through crafting']},
+	{name:'Superior Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 750 health and removes one negative effect','Heals extra 250 health, if an effect is removed','Only obtainable through crafting']},
 	{name:'Adren&shy;a&shy;line Shot', rarity:'uncommon', type:'Potion', attributes:['Gives <effect>Speed</effect> for 20 sec.']},
 	{name:'Aether Vial', rarity:'rare', type:'Potion', attributes:['Instantly fills overdrive meter']},
 	{name:'Antidote', rarity:'rare', type:'Potion', attributes:['Restores 200 health and removes one negative effect','Heals extra 400 health, if an effect is removed']},

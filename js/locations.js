@@ -1,5 +1,5 @@
 const locations = [
-	{name:'Castle Zagore',notes:['The hub of this world.'],noimage:true},
+	{name:'Castle Zagore',notes:['The hub of this world.','Home of <npc>Queen Katarina</npc> and her military advisor <npc>Sir Krum</npc>','Traders: <npc>Damian</npc> the Alchemist and <npc>Patriarch Casimir</npc>','<npc>Irene</npc> and <npc>Private Stash</npc> will join, once you meet them during the main quest.'],noimage:true},
 	{name:'The Royal Gardens',links:['Befouled Tomb','Sepulcher of the Damned','Den of the Broodmother','The Royal Crypt'],secrets:3,
 		normal:['Use 10 Demon powers','Slay 25 Spider Eggs','Slay all 5 Spider Nests in the Labyrinth','Slay Argus the Dreaded Mage','Slay the Chessmaster'],
 		elite:['Slay 10 Wraiths with 5 Active <hex>Hexes</hex>','Slay 80 Monsters with Melee Attacks while above 80% helath','Slay 2 Champions Affected by <effect>Cripple</effect>','Slay 80 Monsters without taking damage and without using Demon Powers','Slay 5 Undead Brutes within 120 seconds without dying']},
@@ -139,13 +139,6 @@ const locations = [
 	{name:'Sanctum Sanctorum',links:['The Shunned Manor'],secrets:3,
 		normal:['Find 3 Secrets','Slay 30 Miscreations with Shotgun','Slay 12 Vampiric Titems with Hand Mortar','Slay Lord Gabriel with 3 active <hex>Hexes</hex>','Slay Lord Gabriel without dying and without using Shrines'],
 		elite:['Slay 45 Miscreations without dying with 5 active <hex>Hexes</hex>','Slay Lord Gabriel in Stage 1 within 240 seconds without dying','Slay Lord Gabirel in Stage 2 while above 50% health without using Shrines','Slay Lord Gabriel in Stage 3 while he is affected by <effect>Brutality</effect>','Slay Lord Gabriel in Stage 3 without dying with 5 active <hex>Hexes</hex>']},
-
-	{name:'The Locus',dlc:1,notes:['The Locus is the hub of the Fractured Worlds campaign.']},
-	{name:'The Fracture',dlc:1,notes:['Randomly generated infinite dungeon that changes every day.','Last known location of <item rarity="legendary">the Frame of the Astrolabe</item> on tier 10'],noimage:true},
-	{name:'Hanging Gardens of Ea',dlc:1,notes:['Randomly generated single level dungeon that changes every day.','Contains a <item rarity="legendary">Shard of the Astrolabe</item>'],noimage:true},
-	{name:'Cadaver City',dlc:1,notes:['Randomly generated single level dungeon that changes every day.','Contains a <item rarity="legendary">Shard of the Astrolabe</item>'],noimage:true},
-	{name:'Amaranthine Autumn',dlc:1,notes:['Randomly generated single level dungeon that changes every day.','Contains a <item rarity="legendary">Shard of the Astrolabe</item>'],noimage:true},
-	{name:'Lethean Caves',dlc:1,notes:['Randomly generated single level dungeon that changes every day.','Contains a <item rarity="legendary">Shard of the Astrolabe</item>'],noimage:true},
 	
 	{name:'The Pub at the End of Time',dlc:2,secrets:0,notes:['The Pub at the End of Time is the hub of the Mot&ouml;rhead campaign.']},
 	
@@ -215,4 +208,11 @@ const locations = [
 		notes:['Arena of area boss Queen of the Damned'],
 		normal:['Slay Queen of the Damned with Revolvers','Slay Queen of the Damned with Guitars','Slay 10 Champions','Slay Queen of the Damned with 3 active <hex>Hexes</hex>','Slay Queen of the Damned without using Potions and Shrines'],
 		elite:['Slay Queen fo teh Damned with <hex>Hex of Tyranny</hex>','Slay 25 Champions','Slay Queen of the Damned within 360 seconds','Slay Queen of the Damned while above 50% health','Slay Queen of the Damned without dying qith 5 active <hex>Hexes</hex>']},
+
+	{name:'The Locus',dlc:1,notes:['The Locus is the hub of the Fractured Worlds campaign.']},
+	{name:'The Fracture',dlc:1,notes:['Randomly generated infinite dungeon that changes every day.','Last known location of <item rarity="legendary">the Frame of the Astrolabe</item> on tier 10 and more <item rarity="legendary">Shard of the Astrolabe</item> on tier 25 and tier 50.','Chests can appear randomly, too.'],noimage:true},
+	{name:'Hanging Gardens of Ea',dlc:1,notes:['Randomly generated single level dungeon that changes every day.','Contains <item rarity="legendary">Shard of the Astrolabe</item>'],noimage:true},
+	{name:'Cadaver City',dlc:1,notes:['Randomly generated single level dungeon that changes every day.','Contains <item rarity="legendary">Shard of the Astrolabe</item>'],noimage:true},
+	{name:'Amaranthine Autumn',dlc:1,notes:['Randomly generated single level dungeon that changes every day.','Contains <item rarity="legendary">Shard of the Astrolabe</item>'],noimage:true},
+	{name:'Lethean Caves',dlc:1,notes:['Randomly generated single level dungeon that changes every day.','Contains <item rarity="legendary">Shard of the Astrolabe</item>'],noimage:true},
 ];

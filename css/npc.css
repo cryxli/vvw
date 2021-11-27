@@ -1,0 +1,10 @@
+div.container {
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: contain;
+}
+
+div.container p { padding-right: 12pc; }
+
+div.spacer { height: 30pc; }
+div.spacer-sm { height: 15pc; }
