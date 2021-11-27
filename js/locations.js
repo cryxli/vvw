@@ -7,6 +7,7 @@ const locations = [
 		normal:['Slay 50 Monsters with ranged attacks','Find 2 Secrets','Slay 80 Monsters without using potions','Slay 80 Monsters within 360 seconds','Slay 50 Monsters without taking damage'],
 		elite:['Slay 80 Monsters with Scythe with 5 Active <hex>Hexes</hex>','Slay 3 Forgotten Kings affected by <effect>Daze</effect>','Slay 20 monsters with a single Attack or Demon Power without taking damage','Overkill 35 Skeletons with Shotgun within 30 seconds','Slay 12 Undead Pyromancers within 60 seconds without taking damage']},
 	{name:'Sepulcher of the Damned',links:['The Royal Gardens'],secrets:2,
+		notes:['Rescue <npc>Private Stash</npc>'],
 		normal:['Destroy 70 burial urns in the Sepulcher of the Damned','Overkill 15 Skeletons','Slay 30 Monsters with Hammer','Find 2 secrets','Slay 70 Monsters without taking damage'],
 		elite:['Slay 7 Ravenous Souls with Bombs','Overkill 60 Monsters with Hand Mortar without Dying','Slay 80 Monsters within 90 seconds with <hex>Hex of Malice</hex>','Slay 35 Monsters with Sword without taking damage and without using Demon Powers','Slay 80 Monsters within 120 seconds with 5 active <hex>Hexes</hex>']},
 	{name:'Den of the Broodmother',links:['The Royal Gardens'],secrets:2,
