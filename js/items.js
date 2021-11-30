@@ -25,9 +25,9 @@ const items = [
 	{name:'Legendary Dye', rarity:'legendary', type:'Ingredient', attributes:['Use in Transmutation to change the color of your outfit','This "color" adds a glow effect similar to divine or wicked cards to an outfit.']},
 	// --- outfits
 	{name:'Hunter\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['Gain 100% of the damage taken as Overdrive']},
-	{name:'Cav&shy;a&shy;lier\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['You gain 80 Overdrive every second, but attacks no longer grant Overdrive']},
+	{name:'Cav&shy;a&shy;lier\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['You gain 80-180 Overdrive every second, but attacks no longer grant Overdrive']},
 	{name:'Vig&shy;i&shy;lante\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['Critical hits grant 150% more Overdrive','Normal Attacks no longer grant Overdrive']},
-	{name:'Wan&shy;der&shy;er\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['You gain 80 Overdrive every second, but attacks no longer grant Overdrive']},
+	{name:'Wan&shy;der&shy;er\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['You gain 80-180 Overdrive every second, but attacks no longer grant Overdrive','Has exactly the same stats as <item rarity="legendary" id="cavalier_s_outfit">Cav&shy;a&shy;lier\'s Outfit</item>','Pre-order only item']},
 	{name:'Van&shy;guard\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['+40 armor penetration','Increases maximum Overdrive by 2000 (1 charge)','Decreases overdrive gain by 10%']},
 	{name:'Zealot\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['High Armor','Increases Health by 500']},
 	{name:'Ad&shy;ven&shy;tur&shy;er\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['0-30 armor','Increases the Destiny Slots by 1','Increases maximum Overdrive by 2000','Increases Overdrive gain by 10-30%']},
