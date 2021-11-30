@@ -1,4 +1,3 @@
-// <img src="../img/dp/any_l.png" alt="any legendary demon power" title="any legendary demon power"/>
 const talismans = [
 	{name:'Antique', rarity:"legendary", attributes:['All enemies within <max>5-11</max> m radius and in line of sight turn into dancing skeletons and then die.','Doesn\'t affect Champions, Bosses or Tyrants.'], 
 		recipe:['<power rarity="legendary">Blink</power>','<item rarity="legendary">Lucky Rabbit\'s Foot</item>','<talisman>Curio</talisman>']},

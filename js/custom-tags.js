@@ -40,7 +40,7 @@ window.customTags = window.customTags||function(customConfig) {
 	
 	$('location').each((index,elem) => {
 		const text = $(elem).text();
-		const id = $(elem).attr('id')||text.toLowerCase().replace(/ /g,'_');
+		const id = $(elem).attr('id')||text.toLowerCase().replace(/[' ]/g,'_');
 		$(elem).replaceWith('<a href="'+url+'html/location.htm?'+id+'">'+text+'</a>');
 	});
 	
