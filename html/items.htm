@@ -20,6 +20,7 @@
 		</ul>
 	</li>
 	<li>Outfits</li>
+	<li>Miscellaneous</li>
 </ul>
 
 <h2>List</h2>
@@ -32,6 +33,7 @@
 					<a href="../html/items.htm?potion" type="button" class="btn btn-outline-secondary">Consumables</a>
 					<a href="../html/items.htm?ingredient" type="button" class="btn btn-outline-secondary">Ingredients</a>
 					<a href="../html/items.htm?outfit" type="button" class="btn btn-outline-secondary">Outfits</a>
+					<a href="../html/items.htm?other" type="button" class="btn btn-outline-secondary">Miscellaneous</a>
 					<a href="../html/items.htm" type="button" class="btn btn-outline-primary">Reset filter</a>
 				</div>
 			</div>
@@ -47,6 +49,11 @@
 <script>
 $(document).ready(function() {
 
+	var shorten = function(text) {
+		// shorten 'Astrolabe' to 'AL'
+		return text.replace(/As&shy;tro&shy;labe/g,'AL');
+	}
+
 	var makeCard = function(item) {
 		const id = item.id||window.id(item.name);
 		var type = (item.type||'').toLowerCase().replace(/ /g,'_');
@@ -54,8 +61,8 @@ $(document).ready(function() {
 		var s = '<div class="col-4">'
 			+ '<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-100 position-relative">'
 				+ '<div class="col p-4 d-flex flex-column position-static">'
-					+ '<h3 class="mb-0 '+item.rarity+'">'+item.name+'</h3>'
-					+ '<a href="../html/item.htm?'+id+'" class="stretched-link"></a>'
+					+ '<h3 class="mb-0 '+item.rarity+'">'+shorten(item.name)+'</h3>'
+					+ '<a href="../html/item.htm?'+id+'" class="stretched-link" title="'+item.name+'"></a>'
 				+ '</div>'
 				+ '<div class="col-auto d-none d-lg-block">'
 					+ '<div role="img" class="logopower" style="background-image: url(\''+img+'\');"></div>'
@@ -76,7 +83,9 @@ $(document).ready(function() {
 		var search = decodeURI(window.location.search||'?').substring(1).replace(/_/g,' ');
 		if (!!search) {
 			search = search.split(/ /).map(s => s[0].toUpperCase() + s.substring(1)).join(' ');
-			$("a:contains('"+search+"')").removeClass('btn-outline-secondary').addClass('btn-secondary');
+			var filter = search;
+			if (search === 'Other') { filter = 'Miscellaneous'; }
+			$("a:contains('"+filter+"')").removeClass('btn-outline-secondary').addClass('btn-secondary');
 			filterItems(search);
 		} else {
 			filterItems('');

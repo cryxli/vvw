@@ -1,3 +1,4 @@
+// <img src="../img/dp/any_l.png" alt="any legendary demon power" title="any legendary demon power"/>
 const talismans = [
 	{name:'Antique', rarity:"legendary", attributes:['All enemies within <max>5-11</max> m radius and in line of sight turn into dancing skeletons and then die.','Doesn\'t affect Champions, Bosses or Tyrants.'], 
 		recipe:['<power rarity="legendary">Blink</power>','<item rarity="legendary">Lucky Rabbit\'s Foot</item>','<talisman>Curio</talisman>']},
@@ -8,9 +9,9 @@ const talismans = [
 	{name:'Boon', rarity:"rare", attributes:['Gain several positive conditions for <max>20-44</max> sec'], 
 		recipe:['<power rarity="legendary">Sanguine Aura</power>','<item rarity="rare">White Dye</item>','<talisman>Charm</talisman>']},
 	{name:'Charm', rarity:"uncommon", attributes:['Gain Invulnerability for <max>7-13</max> sec.'], 
-		recipe:['<item rarity="uncommon">Ambrosia</item>','<power radius="common">Sanguine Aura</power>','<card rare="uncommon">The Sun</card>']},
+		recipe:['<item rarity="uncommon">Ambrosia</item>','<power radius="common">Sanguine Aura</power>','<card rarity="uncommon">The Sun</card>']},
 	{name:'Curio', rarity:'rare', attributes:['All attacks <effect>Daze</effect> enemies for <max>20-68</max> sec.'], 
-		recipe:['<card>The Fool</card>','<i class="legendary">legendary demon power</i>','<talisman rarity="uncommon">Trinket</talisman>']},
+		recipe:['<card>The Fool</card>','<img src="../img/dp/any_l.png" alt="any legendary demon power" title="any legendary demon power"/>','<talisman rarity="uncommon">Trinket</talisman>']},
 	{name:'Effigy', rarity:'uncommon', attributes:['Killed enemies leace exploding pumpkins damaging other enemies for the next <max>15-33</max> sec.'], 
 		recipe:['<item rarity="rare">Aether Vial</item>','<card>The Vampire</card>','<power rarity="rare">Berserk Aura</power>']},
 	{name:'Flame', rarity:'uncommon', attributes:['Releases 5 fireballs towards the nearest enemies.','Each fireball creates fiery explosion on hit dealing (~22% of weapon damage) damage.'], 
@@ -26,7 +27,7 @@ const talismans = [
 	{name:'Phoenix', rarity:"legendary", attributes:['Teleport to another place causing fierce explosions on both ends.','Each explosion deals (~22% of weapon damage) damage to each monster in 3m radius.'], 
 		recipe:['<weapon rarity="legendary" type="Hammer">Meteor</weapon>','<card rarity="legendary">The Sun</card>','<talisman>Ember</talisman>']},
 	{name:'Relic', rarity:"legendary", attributes:['Full heal.','Each hit is an instan kill for the next <max>7-13</max> sec.','Doesn\'t affect Champions, Bosses or Tyrants.'], 
-		recipe:['<card rarity="legendary">Justice</card>','<item rarity="legendary">Legendary Dye</item>','<talisman>Boon</talisman>']},
+		recipe:['<card rarity="rare">Justice</card>','<item rarity="legendary">Legendary Dye</item>','<talisman>Boon</talisman>']},
 	{name:'Trinket', rarity:'uncommon', attributes:['Applies the <effect>Slow</effect> condition to all enemies in 10m radius for <max>20-44</max> sec.'], 
 		recipe:['<i class="common">common weapon</i>','<card>The Fool</card>','<i class="rare">rare demon power</i>']},
 ];
