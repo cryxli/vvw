@@ -146,6 +146,24 @@ window.customTags = window.customTags||function(customConfig) {
 		const text = $(elem).text();
 		$(elem).replaceWith('<a href="'+url+'html/hexes.htm" class="legendary">'+text+'</a>');
 	});
+	
+	//
+	$('dmg').each((index,elem) => {
+		const text = $(elem).text();
+		$(elem).replaceWith('<span class="black" title="Damage"><img src="'+url+'img/dmg.png" alt="Damage"/>'+text+'</span>');
+	});
+	$('armor-penetration').each((index,elem) => {
+		const text = $(elem).text();
+		$(elem).replaceWith('<span class="black" title="Armor Penetration"><img src="'+url+'img/armor_penetration.png" alt="Armor Penetration"/>'+text+'</span>');
+	});
+	$('crit-chance').each((index,elem) => {
+		const text = $(elem).text();
+		$(elem).replaceWith('<span class="black" title="Crit Chance"><img src="'+url+'img/crit_chance.png" alt="Crit Chance"/>'+text+'%</span>');
+	});
+	$('crit-dmg').each((index,elem) => {
+		const text = $(elem).text();
+		$(elem).replaceWith('<span class="black" title="Crit Damage"><img src="'+url+'img/crit_dmg.png" alt="Crit Damage"/>'+text+'%</span>');
+	});
 
 };
 window.id=window.id||function(text) {

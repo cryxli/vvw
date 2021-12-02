@@ -13,3 +13,5 @@ i.common, i.uncommon, i.rare, i.legendary, i.common:hover, i.uncommon:hover, i.r
 .logoeffect { width: 80px; height: 126px; background-size: contain; background-repeat: no-repeat; background-position: center; }
 /*img.common,img.uncommon,img.rare,img.legendary { width: 100px; height: 157px; }*/
 #cards_weapon div.flex-column p, #variations div.flex-column p { margin-bottom: -1em; }
+/* weapon stats */
+span.black { display: inline-block; background-color: #000000; color: #ffffff; line-height: 26px; padding-right: 4px; }
