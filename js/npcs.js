@@ -15,7 +15,7 @@ const npcs = [
 	{name:'Rachnoss',url:'rachnoss.htm'},
 //	{name:'The Solicitor',url:'solicitor.htm'},
 	{name:'Private Stash',url:'stash.htm'},
-//	{name:'Vail',url:'vail.htm'},
+	{name:'Vail',url:'vail.htm'},
 	// Victor Vran
 	// Warpig Machine
 	// Orgasmatron
