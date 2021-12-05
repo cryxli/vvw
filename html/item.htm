@@ -39,11 +39,14 @@
 	</div>
 </div>
 
+<div class="d-none" id="recipe"></div>
+
 <a href="../html/items.htm" class="btn btn-outline-secondary">back</a>
 
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="../js/custom-tags.js"></script>
+<script src="../js/recipes.js"></script>
 <script src="../js/items.js"></script>
 <script>
 $(document).ready(function() {
@@ -80,6 +83,10 @@ $(document).ready(function() {
 		s += '</div>';
 	}
 	$('#detail').append(s);
+	
+	if (!!item.recipe && item.recipe.length > 1) {
+		$('#recipe').recipe(item.recipe);
+	}
 
 	window.customTags();
 });

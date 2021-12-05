@@ -37,6 +37,8 @@
 	</div>
 </div>
 
+<section id="recipe" class="d-none"></section>
+
 <section id="variations" class="d-none">
 <h2>Variations</h2>
 <div class="row"></div>
@@ -47,6 +49,7 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="../js/custom-tags.js"></script>
+<script src="../js/recipes.js"></script>
 <script src="../js/cards.js"></script>
 <script>
 $(document).ready(function() {
@@ -147,6 +150,10 @@ $(document).ready(function() {
 			$('#variations>div.row').append(makeCard(c));
 		});
 		$('#variations').removeClass('d-none');
+	}
+	
+	if (!!card.recipe && card.recipe.length > 0) {
+		$('#recipe').recipe(card.recipe);
 	}
 	
 	window.customTags();

@@ -2,8 +2,8 @@ const items = [
 	// --- potion
 	{name:'Lucky Rab&shy;bit\'s Foot', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Gives <effect>Luck</effect> for 5 sec.','Very rare drop.']},
 	{name:'Med&shy;ical Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 300 health and removes one negative effect','Heals extra 150 health, if an effect is removed','Rare drop only.']},
-	{name:'Greater Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 500 health and removes one negative effect','Heals extra 250 health, if an effect is removed','Only obtainable through crafting']},
-	{name:'Superior Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 750 health and removes one negative effect','Heals extra 250 health, if an effect is removed','Only obtainable through crafting']},
+	{name:'Greater Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 500 health and removes one negative effect','Heals extra 250 health, if an effect is removed','Only obtainable through crafting'], recipe:[null,'<item rarity="legendary">Medical Kit</item>','<item rarity="legendary">Medical Kit</item>','<item rarity="legendary">Medical Kit</item>']},
+	{name:'Superior Med Kit', rarity:'legendary', type:'Potion', attributes:['Unlimited use','Restores 750 health and removes one negative effect','Heals extra 250 health, if an effect is removed','Only obtainable through crafting'], recipe:[null,'<item rarity="legendary">Greater Med Kit</item>','<item rarity="legendary">Greater Med Kit</item>','<item rarity="legendary">Greater Med Kit</item>']},
 	{name:'Adren&shy;a&shy;line Shot', rarity:'uncommon', type:'Potion', attributes:['Gives <effect>Speed</effect> for 20 sec.']},
 	{name:'Aether Vial', rarity:'rare', type:'Potion', attributes:['Instantly fills overdrive meter']},
 	{name:'Antidote', rarity:'rare', type:'Potion', attributes:['Restores 200 health and removes one negative effect','Heals extra 400 health, if an effect is removed']},
@@ -37,9 +37,9 @@ const items = [
 	{name:'Mikkey\'s Outfit', rarity:'legendary', type:'Outfit', attributes:['Gain 20-40% of maximum health when using a Demon Power'], dlc:2},
 	//
 	{name:'Gift Box', id:'gift_box_c', rarity:'common', type:'Potion', attributes:['Contains a random piece of equipment','Combine with other Gift Boxes in Transmutation to get better items']},
-	{name:'Gift Box', id:'gift_box_u', rarity:'uncommon', type:'Potion', attributes:['Contains a random piece of equipment','Combine with other Gift Boxes in Transmutation to get better items']},
-	{name:'Gift Box', id:'gift_box_r', rarity:'rare', type:'Potion', attributes:['Contains a random piece of equipment','Combine with other Gift Boxes in Transmutation to get better items']},
-	{name:'Gift Box', id:'gift_box_l', rarity:'legendary', type:'Potion', attributes:['Contains a random piece of equipment']},
+	{name:'Gift Box', id:'gift_box_u', rarity:'uncommon', type:'Potion', attributes:['Contains a random piece of equipment','Combine with other Gift Boxes in Transmutation to get better items'], recipe:[null,'<item id="gift_box_c">Gift Box</item>','<item id="gift_box_c">Gift Box</item>','<item id="gift_box_c">Gift Box</item>']},
+	{name:'Gift Box', id:'gift_box_r', rarity:'rare', type:'Potion', attributes:['Contains a random piece of equipment','Combine with other Gift Boxes in Transmutation to get better items'], recipe:[null,'<item id="gift_box_u">Gift Box</item>','<item id="gift_box_u">Gift Box</item>','<item id="gift_box_u">Gift Box</item>']},
+	{name:'Gift Box', id:'gift_box_l', rarity:'legendary', type:'Potion', attributes:['Contains a random piece of equipment'], recipe:[null,'<item id="gift_box_r">Gift Box</item>','<item id="gift_box_r">Gift Box</item>','<item id="gift_box_r">Gift Box</item>']},
 	{name:'Carved Box', rarity:'rare', type:'Potion', attributes:['Contains a random piece of equipment','<i>Trick or Treat!</i>']},
 	{name:'Pumpkin Pie', rarity:'legendary', type:'Potion', attributes:['Eat Pumpkin Pie to travel to the <location>Secret Pumpkin Level</location>.','<i>This pie smells unbelievably delicious. Would you take a bite?</i>']},
 	//
