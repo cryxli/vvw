@@ -13,7 +13,7 @@ const npcs = [
 	{name:'Queen Katarina',url:'katarina.htm'},
 	{name:'Mordra',url:'mordra.htm'},
 	{name:'Rachnoss',url:'rachnoss.htm'},
-//	{name:'The Solicitor',url:'solicitor.htm'},
+	{name:'The Solicitor',url:'solicitor.htm'},
 	{name:'Private Stash',url:'stash.htm'},
 	{name:'Vail',url:'vail.htm'},
 	// Victor Vran
