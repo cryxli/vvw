@@ -26,7 +26,18 @@
 </section>
 
 <section>
-<h2>List</h2>
+<div class="row">
+	<div class="col"><h2>List</h2></div>
+	<div class="col">
+		<div class="row">
+			<div class="btn-group" role="group" aria-label="Talisman Sort Order">
+				<a href="../html/talismans.htm#list" type="button" class="btn btn-sm sort-alpha">A...Z</a>
+				<a href="../html/talismans.htm?chain#list" type="button" class="btn btn-sm sort-progress">Progression</a>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="row" id="list"></div>
 </section>
 
@@ -55,7 +66,20 @@ $(document).ready(function() {
 	}
 	
 	triggers.forEach(t => $('table').append('<tr><td>'+t.name+'</td><td>'+t.trigger+'</td></tr>'));
-	talismans.forEach(talisman => $('#list').append(makeCard(talisman)));
+	
+	// sort talismans A...Z by name
+	var list = talismans;
+	if (window.readParam('id') === 'chain') {
+		// ...or, sort talismans per progression group
+		list = [];
+		talismanGroups.forEach(group => group.forEach(text => list.push(talismans.find(t => t.name === text)) ));
+		$('a.sort-alpha').addClass('btn-outline-secondary');
+		$('a.sort-progress').addClass('btn-secondary');
+	} else {
+		$('a.sort-alpha').addClass('btn-secondary');
+		$('a.sort-progress').addClass('btn-outline-secondary');
+	}
+	list.forEach(talisman => $('#list').append(makeCard(talisman)));
 });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -30,6 +30,13 @@ const talismans = [
 	{name:'Trinket', rarity:'uncommon', attributes:['Applies the <effect>Slow</effect> condition to all enemies in 10m radius for <max>20-44</max> sec.'], 
 		recipe:['<i class="common">common weapon</i>','<card>The Fool</card>','<i class="rare">rare demon power</i>']},
 ];
+const talismanGroups = [
+	['Charm','Boon','Relic'],
+	['Effigy','Idol','Artifact'],
+	['Flame','Ember','Phoenix'],
+	['Gizmo','Gadget','Appartus'],
+	['Trinket','Curio','Antique'],
+];
 const triggers = [
 	{name:'Barbaric', trigger:'Charge with <max>100-340</max> Energy per Special Weapon attack'},
 	{name:'Bastion', trigger:'Charge with <max>50-110</max> Energy per Deflected Attack'},
