@@ -4,7 +4,9 @@ const weapons = [
 	{name:'Bertram', rarity:'legendary', type:'Hand Mortar', attributes:['Damage increased by 34% when the overdrice meter is full','+75 armor penetration','Basic attack fires a powerful, slow moving projectile']},
 	{name:'The Be&shy;tray&shy;er', rarity:'legendary', type:'Sword', attributes:['Damage increased by 44%','While equipped: Minimal gold drops','+90 armor penetration','Reflect projectiles by hitting them with a Hack attack','Available after completing the <bounty>JOIN-THE-DARK-SIDE</bounty> bounty hunt.']},
 	{name:'Boomer', rarity:'legendary', type:'Hand Mortar', attributes:['Critical damage increased by 147%','Inflicts <effect>Vulnerable</effect> with 22% chance','Fast rate of fire.','Grenades inflict less damage and bounce more times']},
-	{name:'Chick&shy;en Can&shy;non', rarity:'legendary', type:'Hand Mortar', attributes:['+66 armor penetration','Critical chance increased by 25%','Bouncing Betty fires three exploding chichens instead of a single grenade but also fires less often']},
+	{name:'Chick&shy;en Can&shy;non', rarity:'legendary', type:'Hand Mortar', attributes:[
+		// '<dmp>56-180</dmg>','<armor-penetration>66</armor-penetration>','<crit-chance>36</crit-chance>','<crit-dmg>200</crit-dmg>',
+		'+66 armor penetration','Critical chance increased by 25%','Bouncing Betty fires three exploding chichens instead of a single grenade but also fires less often']},
 	{name:'Chimera', rarity:'legendary', type:'Hand Mortar', attributes:['Damage increased by 40% when health is above 90%','Gain 170 health on crit (5 sec. cooldown)','Bouncing Betty fires three grenades but fires less often'], notes:['This mortar is buyable at <npc>GebaN</npc> the Broker on <location>The Merchant Quarter</location> map near the entrance of <location>The Cessway</location>']},
 	{name:'Cold&shy;snap', rarity:'legendary', type:'Scythe', attributes:['Attack speed increased by 25%','Gain 68 health on hit','The Shockwave attack hits in a large circle and inflicts <effect>Frost</effect>']},
 	{name:'The Con&shy;sular', rarity:'legendary', type:'Sword', attributes:['Overdrive meter fills 110% faster','+90 armor penetration','Reflect projectiles by hitting them with the Hash attack']},
@@ -22,7 +24,7 @@ const weapons = [
 	{name:'Hell&shy;fire', rarity:'legendary', type:'Hammer', attributes:['Damage increased by 22%','Inflicts <effect>Vulnerable</effect> with 25% chance.','Smash attack created a lake of molten fire']},
 	{name:'Hell&shy;rais&shy;ers', rarity:'legendary', type:'Revolver', attributes:['50% faster weapon skill cooldowns','Critical hits knock back enemies (5 sec. cooldown)','Double shots and special attacks inflict <effect>Burning</effect>'],dlc:2},
 	{name:'Ignis Tene&shy;bris', rarity:'legendary', type:'Tome', attributes:[
-		'<dmg>26-44 to 27-45</dmg>','<armor-penetration>0<armor-penetration>','<crit-chance>7-11</crit-chance>','<crit-dmg>100</crit-dmg>',
+		'<dmg>26-44 to 27-45</dmg>','<armor-penetration>0</armor-penetration>','<crit-chance>7-11</crit-chance>','<crit-dmg>100</crit-dmg>',
 		'Damage increased by 47% when health is above 90%','Gain 40-68 health on hit','Dimension Wave leaves a trail of flame that damages foes.'],dlc:5},
 	{name:'Justice', rarity:'legendary', type:'Hammer', attributes:['44% faster weapon skill cooldowns','Attack speed increased by 25%','Crush attack creates a vortex that pulls enemies towards you']},
 	{name:'The Kill&shy;meister', rarity:'legendary', type:'Guitar', attributes:['Damage increased by 32%','Knocks back enemies with X% chance','Power Chord attack pierces targets and has longer range'],dlc:2},
@@ -33,7 +35,9 @@ const weapons = [
 	{name:'Lady Luck', rarity:'legendary', type:'Sword', attributes:['While equipped: Monsters drop 116% more gold','Critical chance increased by 25%','Enemies drop gold piles when critical hit']},
 	{name:'The Master', rarity:'legendary', type:'Sword', attributes:['Damage increased by 34% when health is above 90%','+90 armor penetration','Reflect projectiles by hitting them with the Hack attack']},
 	{name:'Meteor', rarity:'legendary', type:'Hammer', attributes:['+75 armor penetration','Knocks enemies back with X% chance','Attacks cause a meteor to fall down from the sky']},
-	{name:'The Mikkeys', rarity:'legendary', type:'Revolver', attributes:['Overdrive meter fills 75% faster','Gain 80 health on hit','Double shots cause Headbanging in large area'],dlc:2},
+	{name:'The Mikkeys', rarity:'legendary', type:'Revolver', attributes:[
+		'<dmg>22-32 to 27-38</dmg>','<armor-penetration>0</armor-penetration>','<crit-chance>10-17</crit-chance>','<crit-dmg>100</crit-dmg>',
+		'Overdrive meter fills 75-110% faster','Gain 80 health on hit','Double shots cause Headbanging in large area'],dlc:2},
 	{name:'Needle', rarity:'legendary', type:'Rapier', attributes:['Damage increased by X% when the overdrive meter is full','Overdrive meter fills 125% faster','Charge attack leaves a trail of fire']},
 	{name:'Neko&shy;nom&shy;i&shy;con', rarity:'legendary', type:'Tome', attributes:['Critical damage increased by 160%','Critical chance increased by 15%','Stack Aether Charges when picking up power orbs. At 10 charges the Magic Missiles attack calls down neon cats from the heavens'],dlc:5},
 	{name:'Nova', rarity:'legendary', type:'Lightning Gun', attributes:['Attack speed increased by 22%','Attack cooldowns reduced by 4 seconds on overkill (1 sec. cooldown)','Dodging leaves a Lightning Trap behind (5 sec. cooldown)']},
