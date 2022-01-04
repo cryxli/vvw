@@ -5,7 +5,7 @@ const weapons = [
 	{name:'The Be&shy;tray&shy;er', rarity:'legendary', type:'Sword', attributes:['Damage increased by 44%','While equipped: Minimal gold drops','+90 armor penetration','Reflect projectiles by hitting them with a Hack attack','Available after completing the <bounty>JOIN-THE-DARK-SIDE</bounty> bounty hunt.']},
 	{name:'Boomer', rarity:'legendary', type:'Hand Mortar', attributes:['Critical damage increased by 147%','Inflicts <effect>Vulnerable</effect> with 22% chance','Fast rate of fire.','Grenades inflict less damage and bounce more times']},
 	{name:'Chick&shy;en Can&shy;non', rarity:'legendary', type:'Hand Mortar', attributes:[
-		// '<dmp>56-180</dmg>','<armor-penetration>66</armor-penetration>','<crit-chance>36</crit-chance>','<crit-dmg>200</crit-dmg>',
+		'<dmg>41-132 to 56-180</dmg>','<armor-penetration>45-66</armor-penetration>','<crit-chance>36</crit-chance>','<crit-dmg>200</crit-dmg>',
 		'+66 armor penetration','Critical chance increased by 25%','Bouncing Betty fires three exploding chichens instead of a single grenade but also fires less often']},
 	{name:'Chimera', rarity:'legendary', type:'Hand Mortar', attributes:['Damage increased by 40% when health is above 90%','Gain 170 health on crit (5 sec. cooldown)','Bouncing Betty fires three grenades but fires less often'], notes:['This mortar is buyable at <npc>GebaN</npc> the Broker on <location>The Merchant Quarter</location> map near the entrance of <location>The Cessway</location>']},
 	{name:'Cold&shy;snap', rarity:'legendary', type:'Scythe', attributes:['Attack speed increased by 25%','Gain 68 health on hit','The Shockwave attack hits in a large circle and inflicts <effect>Frost</effect>']},
