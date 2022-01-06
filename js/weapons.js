@@ -43,8 +43,8 @@ const weapons = [
 	{name:'Nova', rarity:'legendary', type:'Lightning Gun', attributes:['Attack speed increased by 22%','Attack cooldowns reduced by 4 seconds on overkill (1 sec. cooldown)','Dodging leaves a Lightning Trap behind (5 sec. cooldown)']},
 	{name:'Oil Shoot&shy;er', rarity:'legendary', type:'Hand Mortar', attributes:['Overdrive meter fills 110% faster','While equipped: Monsters drop 200% more gold','Oil Spill attack (replaces Fire Lake) creates a pool of oil which causes <effect>Daze</effect> on hit and can be ignited by other mortar attacks']},
 	{name:'Old Gutrots', rarity:'legendary', type:'Revolver', attributes:[
-		/*'<dmg>22-32</dmg>','<armor-penetration>0</armor-penetration>','<crit-chance>42</crit-chance>','<crit-dmg>100</crit-dmg>',*/
-		'Attack speed increased by 15%','Stack aether charges on crit','At 10 charges the barrage attack inflicts additional damage and <effect>cripples</effect> all foes in the area'],dlc:2},
+		'<dmg>21-30 to 27-38</dmg>','<armor-penetration>0</armor-penetration>','<crit-chance>42</crit-chance>','<crit-dmg>100</crit-dmg>',
+		'Attack speed increased by 15-22%','Critical chance increased by 25%','Stack aether charges on crit','At 10 charges the barrage attack inflicts additional damage and <effect>cripples</effect> all foes in the area'],dlc:2},
 	{name:'Party Starter', rarity:'legendary', type:'Shotgun', attributes:['Critical damage increased by 88%','Knocks back enemies with 35% chance','Stack Aether Charges on Split Timing.','At 15 chargers the Fire attack unleashes a spread of fireworks']},
 	{name:'The Piece&shy;mak&shy;ers', rarity:'legendary', type:'Revolver', attributes:['Critical damage increased by 70%','Inflicts <effect>vulnarable</effect> with 40% chance','exploding bullets']},
 	{name:'Power Foil', rarity:'legendary', type:'Rapier', attributes:['Attack speed increased by 25%','44% faster weapon skill cooldowns','Grants additional Charge use without triggering a cooldown']},
