@@ -1,3 +1,4 @@
+// https://steamcommunity.com/sharedfiles/filedetails/?id=425268514
 const weapons = [
 	{name:'The Ar&shy;can&shy;ist Cook&shy;book', rarity:'legendary', type:'Tome', attributes:['Damage increased by 47% when the overdrive meter is full','Overdrive meter fills 75% faster','Trigger an explosion every time you pick up a power orb'],dlc:5},
 	{name:'The Bass', rarity:'legendary', type:'Guitar', attributes:['Critical Damage increased by 130%','Gain 5.0%  of max health on crit (5 sec. cooldown)','Stack Aether charges when you perform a split-time attck','At 10 charges Power Chord unleashes a swarm of Dazing projectiles'],dlc:2},
@@ -62,6 +63,8 @@ const weapons = [
 	{name:'Spark', rarity:'legendary', type:'Lightning Gun', attributes:['44% faster weapon skill cooldowns','While equipped: Find 40% more items','Random Electrocuted enemy is struck by lightning every 3 seconds']},
 	{name:'Storm', rarity:'legendary', type:'Sword', attributes:['Attack speed increased by 25%','Critical chance increased by 22%','Critical hits create ball lightnings']},
 	{name:'Tri-blade', rarity:'legendary', type:'Scythe', attributes:['Critical damage increased by 14%','+66 armor penetration','The Whirlwind attack shoots projectiles']},
-	{name:'Vengeance', rarity:'legendary', type:'Scythe', attributes:['Damage increased by 44% when health is below 50%','Gain 200 health on crit (5 sec. cooldown)','Triggers a Meteor storm when your health drops below 40%. Cannot trigger more than once every 60 seconds']},
+	{name:'Vengeance', rarity:'legendary', type:'Scythe', attributes:[
+		'<dmg>14-140 to 17-172</dmg>','<armor-penetration>25</armor-penetration>','<crit-chance>10-17</crit-chance>','<crit-dmg>150</crit-dmg>',
+		'Damage increased by 32-44% when health is below 50%','Gain 10% health on crit (5 sec. cooldown)','Triggers a Meteor storm when your health drops below 40%. Cannot trigger more than once every 60 seconds']},
 	{name:'Vera', rarity:'legendary', type:'Shotgun', attributes:['+66 armor penetration','Inflicts <effect>Vulnerable</effect> with 30% chance','Exploding shells']},
 ];
