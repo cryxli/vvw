@@ -58,7 +58,7 @@ $(document).ready(function() {
 	var type = (weapon.type||'').toLowerCase().replace(/ /g,'_');
 	const img = '../img/weapon/'+type+'/'+id+'.png';
 	$('h1').html(weapon.name);
-	document.title = 'Victor Vran - Weapon: '+weapon.name;
+	document.title = 'Victor Vran - Weapon: '+weapon.name.replace(/&shy;/g,'');
 
 	$('#rarity').val(weapon.rarity);
 	$('#rarity').addClass(weapon.rarity);

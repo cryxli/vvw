@@ -12,11 +12,11 @@ const powers = [
 	{name:'Sunray', dlc:0, notes:['While channeling sunray, the player can control the firing direction by pointing the mouse cursor. With a controller, this is done by using the left analog stick). The hero can only turn its direction at a very slow rate.'], effects:['Emit a ray of sunlight that deals 680 - 880 (max base property) damage per second to enemies.','Duration: 5.6 seconds (max secondary property).','The player can neither move nor use weapon attacks while the power is active']},
 	{name:'Time Bubble', dlc:0, effects:['Creates a time bubble at the caster\'s location (but doesn\'t move with the caster) which slows enemies and hostile projectiles within by 50%.','Both attack and movement speeds are affected.','The created time bubble lasts for 12.8 seconds (max base property).','The radius of the time bubble is 10.00 meters (max secondary property).']},
 
-	{name:'Bomber', dlc:2, effects:[]},
+	{name:'Bomber', dlc:2, effects:['Spawns an aircraft which drops bombs that deal damage and leave a pool of burning napalm']},
 	{name:'Crying Shame', dlc:2, effects:['Push back enemies within a radius of 4.5 meters (max base property)','Inflicts <effect>Vulnerable</effect> status on enemies within a radius of 11.3 meters (max secondary property)']},
 	{name:'Death Machine', dlc:2, effects:['Create an area-of-effect which damages enemies within a certain radius for 4 (max secondary property) pulses','Each pulse does 440 (max base property) damage.','The first pulse pulls nearby enemies toward the targeting point.']},
 	{name:'Heartbreaker', dlc:2, effects:['Summons a lightning rod that beams out waves of electricity.','Each wave does 55 (max secondary property) damage to targets and inflicts <effect>Weakness</effect> and <effect>Electrocuted</effect> statuses to targets.','Lightning rod duration: 20.4 seconds (max primary property).','Multiple rods are linked with beams of lightning which damages crossing enemies.']},
 	{name:'Iron Fist', dlc:2, effects:['Summons a giant fist to smash an area 3 times.','Damage per smash: 430 (max base property).','Smash radius: 4.5 meters (max secondary property)','Inflicts <effect>Weakness</effect> status on each smash.']},
-	{name:'Lost in the Ozone', dlc:2, effects:[]},
-	{name:'Paralyzed', dlc:2, effects:[]},
+	{name:'Lost in the Ozone', dlc:2, effects:['You turn into a crystal which stops damage and applies <effect>Frost</effect> to all melee attackers']},
+	{name:'Paralyzed', dlc:2, effects:['Spawns a Speaker which inflicts <effect>Weakness</effect> and <effect>Headbang</effect> to all nearby enemies']},
 ];
