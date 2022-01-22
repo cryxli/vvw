@@ -1,14 +1,17 @@
 // https://steamcommunity.com/sharedfiles/filedetails/?id=425268514
+// 		'<dmg></dmg>','<armor-penetration></armor-penetration>','<crit-chance></crit-chance>','<crit-dmg></crit-dmg>',
 const weapons = [
 	{name:'The Ar&shy;can&shy;ist Cook&shy;book', rarity:'legendary', type:'Tome', attributes:[
 		'<dmg>26-44 to 27-45</dmg>','<armor-penetration>0</armor-penetration>','<crit-chance>7-11</crit-chance>','<crit-dmg>100</crit-dmg>',
 		'Damage increased by 47% when the overdrive meter is full','Overdrive meter fills 75-110% faster','Trigger an explosion every time you pick up a power orb'],dlc:5},
 	{name:'The Bass', rarity:'legendary', type:'Guitar', attributes:[
+// 		'<dmg>28-66</dmg>','<armor-penetration>0</armor-penetration>','<crit-chance>15</crit-chance>','<crit-dmg>230</crit-dmg>',
 		'Critical Damage increased by 130%','Gain 5.0%  of max health on crit (5 sec. cooldown)','Stack Aether charges when you perform a split-time attck','At 10 charges Power Chord unleashes a swarm of Dazing projectiles'],dlc:2},
 	{name:'Bertram', rarity:'legendary', type:'Hand Mortar', attributes:[
 		'Damage increased by 34% when the overdrice meter is full','+75 armor penetration','Basic attack fires a powerful, slow moving projectile']},
 	{name:'The Be&shy;tray&shy;er', rarity:'legendary', type:'Sword', attributes:[
-		'Damage increased by 44%','While equipped: Minimal gold drops','+90 armor penetration','Reflect projectiles by hitting them with a Hack attack','Available after completing the <bounty>JOIN-THE-DARK-SIDE</bounty> bounty hunt.']},
+// 		'<dmg>67-125</dmg>','<armor-penetration>90</armor-penetration>','<crit-chance>10</crit-chance>','<crit-dmg>100</crit-dmg>',
+		'Damage increased by 30-44%','While equipped: Minimal gold drops','+90 armor penetration','Reflect projectiles by hitting them with a Hack attack','Available after completing the <bounty>JOIN-THE-DARK-SIDE</bounty> bounty hunt.']},
 	{name:'Boomer', rarity:'legendary', type:'Hand Mortar', attributes:[
 		'Critical damage increased by 147%','Inflicts <effect>Vulnerable</effect> with 22% chance','Fast rate of fire.','Grenades inflict less damage and bounce more times']},
 	{name:'Chick&shy;en Can&shy;non', rarity:'legendary', type:'Hand Mortar', attributes:[
@@ -17,9 +20,11 @@ const weapons = [
 	{name:'Chimera', rarity:'legendary', type:'Hand Mortar', attributes:[
 		'Damage increased by 40% when health is above 90%','Gain 170 health on crit (5 sec. cooldown)','Bouncing Betty fires three grenades but fires less often'], notes:['This mortar is buyable at <npc>GebaN</npc> the Broker on <location>The Merchant Quarter</location> map near the entrance of <location>The Cessway</location>']},
 	{name:'Cold&shy;snap', rarity:'legendary', type:'Scythe', attributes:[
-		'Attack speed increased by 25%','Gain 68 health on hit','The Shockwave attack hits in a large circle and inflicts <effect>Frost</effect>']},
+		'<dmg>17-176 to 18-180</dmg>','<armor-penetration>25</armor-penetration>','<crit-chance>10-17</crit-chance>','<crit-dmg>150</crit-dmg>',
+		'Attack speed increased by 25%','Gain 40-68 health on hit','The Shockwave attack hits in a large circle and inflicts <effect>Frost</effect>']},
 	{name:'The Con&shy;sular', rarity:'legendary', type:'Sword', attributes:[
-		'Overdrive meter fills 110% faster','+90 armor penetration','Reflect projectiles by hitting them with the Hash attack']},
+// 		'<dmg>50-93</dmg>','<armor-penetration>90</armor-penetration>','<crit-chance>10</crit-chance>','<crit-dmg>100</crit-dmg>',
+		'Overdrive meter fills 75-110% faster','+90 armor penetration','Reflect projectiles by hitting them with the Hash attack']},
 	{name:'Dark Pact', rarity:'legendary', type:'Scythe', attributes:[
 		'Damage increased by 40% when the overdrive meter is full','44% faster weapon skill cooldowns','Monsters slain with this weapon release souls.','Gather souls to gain overdrive']},
 	{name:'Dervish', rarity:'legendary', type:'Scythe', attributes:[
@@ -27,6 +32,7 @@ const weapons = [
 	{name:'Elec&shy;tric Gui&shy;tar', rarity:'legendary', type:'Guitar', attributes:[
 		'Attack speed increased by 25%','Critical hit chance increased by X%','Power Chord attack may inflict the <effect>Electrocuted</effect> condition on hit','Wicked Solo attack unleashes 4 lightninga balls'],dlc:2},
 	{name:'The Ex&shy;plor&shy;er', rarity:'legendary', type:'Guitar', attributes:[
+// 		'<dmg>27-64</dmg>','<armor-penetration>45</armor-penetration>','<crit-chance>15</crit-chance>','<crit-dmg>100</crit-dmg>',	
 		'Overdrive meter fills 125% faster','+45 armor penetration','Bang Attack inflicts <effect>Headbang</effect>','Power Chord attack may inflict <effect>Headbang</effect>.','+50% damage against Headbanging monsters'],dlc:2},
 	{name:'Ex&shy;ter&shy;mi&shy;na&shy;tor', rarity:'legendary', type:'Shotgun', attributes:[
 		'Damage increased by 44% when health is below 50%','+75 armor penetration','The Fire and Aimed Shot attacks pierce targets']},
@@ -51,7 +57,8 @@ const weapons = [
 		'<dmg>26-44 to 27-45</dmg>','<armor-penetration>0</armor-penetration>','<crit-chance>7-11</crit-chance>','<crit-dmg>100</crit-dmg>',
 		'Damage increased by 47% when health is above 90%','Gain 40-68 health on hit','Dimension Wave leaves a trail of flame that damages foes.'],dlc:5},
 	{name:'Justice', rarity:'legendary', type:'Hammer', attributes:[
-		'44% faster weapon skill cooldowns','Attack speed increased by 25%','Crush attack creates a vortex that pulls enemies towards you']},
+// 		'<dmg>132-176</dmg>','<armor-penetration>0</armor-penetration>','<crit-chance>15</crit-chance>','<crit-dmg>100</crit-dmg>',
+		'30-44% faster weapon skill cooldowns','Attack speed increased by 25%','Crush attack creates a vortex that pulls enemies towards you']},
 	{name:'The Kill&shy;meister', rarity:'legendary', type:'Guitar', attributes:[
 		'Damage increased by 32%','Knocks back enemies with X% chance','Power Chord attack pierces targets and has longer range'],dlc:2},
 	{name:'The King in Yellow', rarity:'legendary', type:'Tome', attributes:[
@@ -71,22 +78,27 @@ const weapons = [
 	{name:'Needle', rarity:'legendary', type:'Rapier', attributes:[
 		'Damage increased by X% when the overdrive meter is full','Overdrive meter fills 125% faster','Charge attack leaves a trail of fire']},
 	{name:'Neko&shy;nom&shy;i&shy;con', rarity:'legendary', type:'Tome', attributes:[
+// 		'<dmg>26-44</dmg>','<armor-penetration>0</armor-penetration>','<crit-chance>26</crit-chance>','<crit-dmg>260</crit-dmg>',
 		'Critical damage increased by 160%','Critical chance increased by 15%','Stack Aether Charges when picking up power orbs. At 10 charges the Magic Missiles attack calls down neon cats from the heavens'],dlc:5},
 	{name:'Nova', rarity:'legendary', type:'Lightning Gun', attributes:[
 		'Attack speed increased by 22%','Attack cooldowns reduced by 4 seconds on overkill (1 sec. cooldown)','Dodging leaves a Lightning Trap behind (5 sec. cooldown)']},
 	{name:'Oil Shoot&shy;er', rarity:'legendary', type:'Hand Mortar', attributes:[
-		'Overdrive meter fills 110% faster','While equipped: Monsters drop 200% more gold','Oil Spill attack (replaces Fire Lake) creates a pool of oil which causes <effect>Daze</effect> on hit and can be ignited by other mortar attacks']},
+//		'<dmg>48-153</dmg>','<armor-penetration>0</armor-penetration>','<crit-chance>7</crit-chance>','<crit-dmg>200</crit-dmg>',
+		'Overdrive meter fills 75-110% faster','While equipped: Monsters drop 200% more gold','Oil Spill attack (replaces Fire Lake) creates a pool of oil which causes <effect>Daze</effect> on hit and can be ignited by other mortar attacks']},
 	{name:'Old Gutrots', rarity:'legendary', type:'Revolver', attributes:[
 		'<dmg>21-30 to 27-38</dmg>','<armor-penetration>0</armor-penetration>','<crit-chance>42</crit-chance>','<crit-dmg>100</crit-dmg>',
 		'Attack speed increased by 15-22%','Critical chance increased by 25%','Stack aether charges on crit','At 10 charges the barrage attack inflicts additional damage and <effect>cripples</effect> all foes in the area'],dlc:2},
 	{name:'Party Starter', rarity:'legendary', type:'Shotgun', attributes:[
-		'Critical damage increased by 88%','Knocks back enemies with 35% chance','Stack Aether Charges on Split Timing.','At 15 chargers the Fire attack unleashes a spread of fireworks']},
+// 		'<dmg>48-96</dmg>','<armor-penetration>0</armor-penetration>','<crit-chance>10</crit-chance>','<crit-dmg>220</crit-dmg>',
+		'Critical damage increased by 70-88%','Knocks back enemies with 35% chance','Stack Aether Charges on Split Timing.','At 15 chargers the Fire attack unleashes a spread of fireworks']},
 	{name:'The Piece&shy;mak&shy;ers', rarity:'legendary', type:'Revolver', attributes:[
+// 		'<dmg>22-32</dmg>','<armor-penetration>0</armor-penetration>','<crit-chance>10</crit-chance>','<crit-dmg>170</crit-dmg>',	
 		'Critical damage increased by 70%','Inflicts <effect>vulnarable</effect> with 40% chance','exploding bullets']},
 	{name:'Power Foil', rarity:'legendary', type:'Rapier', attributes:[
 		'Attack speed increased by 25%','44% faster weapon skill cooldowns','Grants additional Charge use without triggering a cooldown']},
 	{name:'Pump&shy;kin Hammer', rarity:'legendary', type:'Hammer', attributes:[
-		'Damage increased by 40% when the overdrive meter is full','Attack cooldowns reduced by 3 seconds on overkill (1 sec. cooldown)','Spawns exploding pumpkins on overkill (0.5 sec. cooldown)'], notes:['Can be bought by <npc>GebaN</npc> the Broker in the north-western corner of the <location>Cemetery Grounds</location>']},
+// 		'<dmg>99-132</dmg>','<armor-penetration>0</armor-penetration>','<crit-chance>15</crit-chance>','<crit-dmg>100</crit-dmg>',
+		'Damage increased by 40-47% when the overdrive meter is full','Attack cooldowns reduced by 2-3 seconds on overkill (1 sec. cooldown)','Spawns exploding pumpkins on overkill (0.5 sec. cooldown)'], notes:['Can be bought by <npc>GebaN</npc> the Broker in the north-western corner of the <location>Cemetery Grounds</location>']},
 	{name:'Rain&shy;bow Gun', rarity:'legendary', type:'Lightning Gun', attributes:[
 		'Damage increased by 40% when the overdrive meter is full','Gain 170 health on crit (5 sec. cooldown)','The Shock attack uses a wider beam that pierces enemies and doesn\'t overheat. However, it also doesn\'t chain to electrocuted enemies.']},
 	{name:'Re&shy;an&shy;i&shy;ma&shy;tor', rarity:'legendary', type:'Shotgun', attributes:[
@@ -100,7 +112,8 @@ const weapons = [
 	{name:'Scoundrel', rarity:'legendary', type:'Rapier', attributes:[
 		'Damage increased by X% when health is above 90%','Gain 80 health on hit','Stack Aether Charges on hits with the Charge attack. At 10 charges the Flurry attack grants Quickness and inflicts Frost to all foes in the area']},
 	{name:'The Sen&shy;tinel', rarity:'legendary', type:'Sword', attributes:[
-		'Critical damage increased by 88%','+90 armor penetration','Reflect projectiles by hitting them with the Hack attack']},
+// 		'<dmg>50-94</dmg>','<armor-penetration>90</armor-penetration>','<crit-chance>10</crit-chance>','<crit-dmg>176</crit-dmg>',	
+		'Critical damage increased by 76-88%','+90 armor penetration','Reflect projectiles by hitting them with the Hack attack']},
 	{name:'Shackles', rarity:'legendary', type:'Sword', attributes:[
 		'+66 armor penetration','Attack cooldowns reduces by 4 cesonds on overkill (1 sec. cooldown)','Larger Daze ares.','Dash attack inflicts damage to all dazed enemies']},
 	{name:'Shard', rarity:'legendary', type:'Sword', attributes:[
