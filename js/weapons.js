@@ -35,6 +35,7 @@ const weapons = [
 // 		'<dmg>27-64</dmg>','<armor-penetration>45</armor-penetration>','<crit-chance>15</crit-chance>','<crit-dmg>100</crit-dmg>',	
 		'Overdrive meter fills 125% faster','+45 armor penetration','Bang Attack inflicts <effect>Headbang</effect>','Power Chord attack may inflict <effect>Headbang</effect>.','+50% damage against Headbanging monsters'],dlc:2},
 	{name:'Ex&shy;ter&shy;mi&shy;na&shy;tor', rarity:'legendary', type:'Shotgun', attributes:[
+		'<dmg>48-96</dmg>','<armor-penetration>75</armor-penetration>','<crit-chance>17</crit-chance>','<crit-dmg>150</crit-dmg>',
 		'Damage increased by 44% when health is below 50%','+75 armor penetration','The Fire and Aimed Shot attacks pierce targets']},
 	{name:'Fifty Shades of Slay', rarity:'legendary', type:'Tome', attributes:[
 		'Damage increased by 17%','+75 armor penetration','Magic Missiles has longer range and higher damage but they no longer pierce targets'],dlc:5},
@@ -50,6 +51,7 @@ const weapons = [
 	{name:'Haunt', rarity:'legendary', type:'Rapier', attributes:[
 		'Damage increased by 22%','Knocks back enemies with 25% chance','The Coup De Grace attack fires a piercing projectile that pushes back foes']},
 	{name:'Hell&shy;fire', rarity:'legendary', type:'Hammer', attributes:[
+		'<dmg>168-224</dmg>','<armor-penetration>0</armor-penetration>','<crit-chance>22</crit-chance>','<crit-dmg>100</crit-dmg>',
 		'Damage increased by 22%','Inflicts <effect>Vulnerable</effect> with 25% chance.','Smash attack created a lake of molten fire']},
 	{name:'Hell&shy;rais&shy;ers', rarity:'legendary', type:'Revolver', attributes:[
 		'50% faster weapon skill cooldowns','Critical hits knock back enemies (5 sec. cooldown)','Double shots and special attacks inflict <effect>Burning</effect>'],dlc:2},
