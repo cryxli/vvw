@@ -208,6 +208,9 @@ $(document).ready(function() {
 	if (window.location.href.indexOf('/location.htm?') !== -1) {
         s += '<li class="nav-item"><a class="nav-link" href="'+url+'html/locations.htm">Locations</a></li>';
 	}
+	if (window.location.href.indexOf('/achievement.htm?') !== -1) {
+        s += '<li class="nav-item"><a class="nav-link" href="'+url+'html/achievements.htm">Achievements</a></li>';
+	}
     s += '</ul>';
     s += '</div>';
 	
