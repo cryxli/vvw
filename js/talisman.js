@@ -8,7 +8,7 @@ const talismans = [
 	{name:'Boon', rarity:"rare", attributes:['Gain several positive conditions for <max>20-44</max> sec'], 
 		recipe:['<power rarity="legendary">Sanguine Aura</power>','<item rarity="rare">White Dye</item>','<talisman>Charm</talisman>']},
 	{name:'Charm', rarity:"uncommon", attributes:['Gain Invulnerability for <max>7-13</max> sec.'], 
-		recipe:['<item rarity="uncommon">Ambrosia</item>','<power radius="common">Sanguine Aura</power>','<card rarity="uncommon">The Sun</card>']},
+		recipe:['<item rarity="uncommon">Ambrosia</item>','<power rarity="common">Sanguine Aura</power>','<card rarity="uncommon">The Sun</card>']},
 	{name:'Curio', rarity:'rare', attributes:['All attacks <effect>Daze</effect> enemies for <max>20-68</max> sec.'], 
 		recipe:['<card>The Fool</card>','<img src="../img/dp/any_l.png" alt="any legendary demon power" title="any legendary demon power"/>','<talisman rarity="uncommon">Trinket</talisman>']},
 	{name:'Effigy', rarity:'uncommon', attributes:['Killed enemies leace exploding pumpkins damaging other enemies for the next <max>15-33</max> sec.'], 
@@ -20,7 +20,7 @@ const talismans = [
 	{name:'Gadget', rarity:"rare", attributes:['All enemies in 10m radius become <effect>Electrocuted</effect> for <max>10-34</max> sec.','Lightning strike hit nearby <effect>Electrocuted</effect> enemies.'], 
 		recipe:['<power rarity="rare">Dark Mist</power>','<card rarity="legendary">The Lightning</card>','<talisman>Gizmo</talisman>']},
 	{name:'Gizmo', rarity:'uncommon', attributes:['All enemies in 10m radius become <effect>Electrocuted</effect> for <max>20-44</max> sec.'], 
-		recipe:['<item rarity="uncommon">Flash Bomb</item>','<i class="">rare lightning gun</i>','<card rarity="rare">Wildcard</card>']},
+		recipe:['<item rarity="uncommon">Flash Bomb</item>','<i class="rare">rare lightning gun</i>','<card rarity="rare">Wildcard</card>']},
 	{name:'Idol', rarity:'rare', attributes:['Gain <effect>Brutality</effect> for <max>60-132</max> sec.'], 
 		recipe:['<power rarity="legendary">Berserk Aura</power>','<item rarity="rare">Black Dye</item>','<talisman rarity="uncommon">Effigy</talisman>']},
 	{name:'Phoenix', rarity:"legendary", attributes:['Teleport to another place causing fierce explosions on both ends.','Each explosion deals (~22% of weapon damage) damage to each monster in 3m radius.'], 
@@ -28,7 +28,7 @@ const talismans = [
 	{name:'Relic', rarity:"legendary", attributes:['Full heal.','Each hit is an instan kill for the next <max>7-13</max> sec.','Doesn\'t affect Champions, Bosses or Tyrants.'], 
 		recipe:['<weapon rarity="legendary" type="Hammer">Justice</weapon>','<item rarity="legendary">Legendary Dye</item>','<talisman>Boon</talisman>']},
 	{name:'Trinket', rarity:'uncommon', attributes:['Applies the <effect>Slow</effect> condition to all enemies in 10m radius for <max>20-44</max> sec.'], 
-		recipe:['<i class="common">common weapon</i>','<card>The Fool</card>','<i class="rare">rare demon power</i>']},
+		recipe:['<i class="common">common weapon</i>','<card>The Fool</card>','<img src="../img/dp/any_r.png" alt="any rare demon power" title="any rare demon power"/>']},
 ];
 const talismanGroups = [
 	['Charm','Boon','Relic'],
