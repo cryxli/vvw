@@ -38,7 +38,8 @@ const weapons = [
 		'<dmg>48-96</dmg>','<armor-penetration>75</armor-penetration>','<crit-chance>17</crit-chance>','<crit-dmg>150</crit-dmg>',
 		'Damage increased by 44% when health is below 50%','+75 armor penetration','The Fire and Aimed Shot attacks pierce targets']},
 	{name:'Fifty Shades of Slay', rarity:'legendary', type:'Tome', attributes:[
-		'Damage increased by 17%','+75 armor penetration','Magic Missiles has longer range and higher damage but they no longer pierce targets'],dlc:5},
+		'<dmg>34-57</dmg>','<armor-penetration>75</armor-penetration>','<crit-chance>11</crit-chance>','<crit-dmg>100</crit-dmg>',
+		'Damage increased by 17-28%','+75 armor penetration','Magic Missiles has longer range and higher damage but they no longer pierce targets'],dlc:5},
 	{name:'Finger of Chaos', rarity:'legendary', type:'Rapier', attributes:[
 		'<dmg>52-79 to 54-81</dmg>','<armor-penetration>100</armor-penetration>','<crit-chance>10-17</crit-chance>','<crit-dmg>220-262</crit-dmg>',
 		'Critical damage increased by 70-112%','While equipped: Find 40% more item','The fourth and final Flurry attack unleashes a burst of projectiles that strike random foes. Enemies killed by those projectiles are turned into exploding chickens.'], notes:['Can be baught at <npc>GebaN</npc> in <location>Bottomless Pit</location>.']},

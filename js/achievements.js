@@ -30,7 +30,7 @@ const achievements = [
 	{name:'Zagore Hold\'em', objective:'Collect 25 different Destiny Cards'},
 	{name:'Tzar Bomba', objective:'Inflict 2500 damage with a single hit'},
 	{name:'Steady Hand Vic', objective:'Have 25 consecutive split-timed attacks'},
-	{name:'Slash and Slash', objective:'Make 5 Slash attacks in 3 seconds'},
+	{name:'Slash and Slash', objective:'Make 5 Slash attacks in 3 seconds', notes:['Can be done on the dummies upstairs in <location>Castle Zagore</location>', '<card rarity="rare">Strength</card> cards give a crit change boost.', 'The sword <weapon rarity="legendary">Lady Luck</weapon> adds another 25% to crit chance.', 'The <item rarity="legendary" id="lucky_rabbit_s_foot">Lucky Rab­bit\'s Foot</item> grants crits for 5sec.']},
 	{name:'Gun&shy;slinger', objective:'Make 10 Aimed Shots in 3 seconds'},
 	{name:'Bonetti\'s Of&shy;fense', objective:'Charge 4 times within 8 seconds'},
 	{name:'Bal&shy;lis&shy;tic Vic', objective:'Hit enemies with 10 consecutive Mortar attacks'},
