@@ -14,7 +14,7 @@ const items = [
 	{name:'Frost Bomb', rarity:'uncommon', type:'Potion', attributes:['Inflicts 300 damage and <effect>Frost</effect> for 3 seconds to all enemies within 7m']},
 	{name:'Healing Potion', rarity:'uncommon', type:'Potion', attributes:['Restores 60% health']},
 	{name:'Leech Bomb', rarity:'uncommon', type:'Potion', attributes:['Inflicts 300 damage to all enemies within 7m','Gain 100 health per enemy hit (up to 1000 health)']},
-	{name:'Liquid Madness', rarity:'rare', type:'Potion', attributes:['Gives <effect>britality/effect> for 20 sec.']},
+	{name:'Liquid Madness', rarity:'rare', type:'Potion', attributes:['Gives <effect>brutality</effect> for 20 sec.']},
 	{name:'Vampire Blood', rarity:'uncommon', type:'Potion', attributes:['Gain 50% Life Steal for 45 sec']},
 	// --- ingredient
 	{name:'Black Dye', rarity:'rare', type:'Ingredient', attributes:['Use in Transmutation to change the color of your outfit']},
